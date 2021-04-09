@@ -2,11 +2,20 @@ body {
 	background: rgb(40, 0, 0);
 	background: linear-gradient(
 		180deg,
-		rgba(40, 0, 0, 1) 12%,
-		rgba(120, 0, 0, 1) 33%,
-		rgba(207, 0, 0, 1) 53%,
-		rgba(134, 0, 0, 1) 80%,
-		rgba(38, 0, 0, 1) 100%
+ rgb(145 0 0) 12%,
+ rgb(78 0 0) 33%,
+ rgba(207, 0, 0, 1) 53%,
+ rgba(134, 0, 0, 1) 80%,
+ rgba(38, 0, 0, 1) 100% 
 	);
 	color: white;
+}
+
+img {
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.table {
+color: white; !important;
 }

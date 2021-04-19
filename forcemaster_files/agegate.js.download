@@ -1,0 +1,222 @@
+/**
+* Base namespace for NCSoft specific functions and jquery widgets
+*/
+
+function runAgegate(isLandingPage) {
+  // check if android device for numpad
+  if (/Android|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    $('.agegate-field').attr('type', 'number');
+  }
+
+  var ageGate = $('.age-gate')
+
+  //Age Gate
+  setTimeout(function(){
+    checkAgeVerified(isLandingPage);
+  },100);
+
+  $(document).on('click','.age-gate form button',function(e) {
+    e.preventDefault();
+    checkAgeGate(e);
+    $(this).closest('form').find("input[type=text]")
+    .focus(function(e) {
+      if ($(this).val().search(/MM|DD|YYYY|JJ|TT|JJJJ|AAAA/) != -1) {
+        $(this).attr('data-original-value',$(this).val());
+        $(this).val('');
+      }
+    })
+    .blur(function(e) {
+      if ($(this).val().search(/^\d+$/)){
+        $(this).val($(this).attr('data-original-value'));
+      }
+    })
+    .change(function(e) {
+      $(this).val($(this).val().replace(/\D/g,''));
+    });
+  });
+
+  $(document).keyup(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode === 13 && ageGate && ageGate.hasClass('age-gate-show')){
+      $('.age-gate form button').click();
+    }
+  });
+}
+
+
+function checkAgeVerified(isLandingPage) {
+  var ageGateCookieName = "age_verified";
+  var lang = $("body").data("lang");
+
+  // No Age Gate on All languages except "EN" and no Age Gate for in-game
+  if (lang === "en") {
+    setTimeout(function(){
+      // if ($(document).ncsVirtualPageTracker()) {
+      //   ($.cookie(ageGateCookieName) == 'failed' || !$.cookie(ageGateCookieName)) && $(document).ncsVirtualPageTracker({virtualPageUrl: '/age-gate'});
+      // }
+    }, 1);
+    if ($.cookie(ageGateCookieName) == "1") {
+      //remove all age gates
+      noAgeGate(isLandingPage);
+    } else if ($.cookie(ageGateCookieName) == 'failed'){
+      if (isLandingPage) {
+        $('.age-gate-form').addClass('age-gate-show');
+      } else {
+        $('.age-gate-overlay').addClass('age-gate-show');
+      }
+      $(".age-gate-show .agegate-container, .age-gate-show .instructions, .age-gate-show button[type='submit']").remove();
+      $(".age-gate-show .age-gate-msg").addClass('insufficient-msg');
+
+      $('.age-gate .age-gate-msg').text("Sorry, you do not meet the minimum requirements.");
+    } else {
+      if (isLandingPage) {
+        $('.age-gate-form').addClass('age-gate-show');
+      } else {
+        $('.age-gate-overlay').addClass('age-gate-show');
+      }
+      $('.agegate-month').focus();
+    }
+  } else {
+    noAgeGate(isLandingPage);
+  }
+}
+
+function noAgeGate(isLandingPage) {
+  $('.age-gate').remove();
+  if (isLandingPage) {
+    $("#landing-page .cbt-signup").addClass('show');
+  }
+}
+
+$('.agegate-field').click(function() {
+  $(this).val('');
+  $('#age-gate-submit-btn').attr('disabled', 'disabled');
+});
+
+
+// handle focus of input boxes and disabled submit button
+$('.agegate-field').keyup(function () {
+
+  if (this.value.length == this.maxLength) {
+    $(this).parent().next().children().focus();
+  }
+
+  let empty = false;
+  $('.agegate-field').each(function() {
+    // if ($(this).val() == '') {
+    //   empty = true;
+    // }
+    if ($(this).hasClass('agegate-year')) {
+      $(this).val().length < this.maxLength && (empty = true);
+    } else {
+      $(this).val() == '' && (empty=true);
+    }
+  });
+
+  if (empty) {
+    $('#age-gate-submit-btn').attr('disabled', 'disabled');
+  } else {
+    $('#age-gate-submit-btn').removeAttr('disabled');
+  }
+});
+
+
+
+function checkAgeGate(e) {
+  //Options
+  // this.contentSel         = "#outer-container,#main-nav";
+  // this.ageGateSel         = "#age-gate";
+  this.ageGateEl         = $(e.target).closest('.age-gate');
+  // this.ageGateMainContent = this.ageGateEl.find('.main-content');
+  this.ageGateErrorSel    = this.ageGateEl.find('.age-gate-msg');
+  this.ageGateCookie      = "age_verified";
+  this.ageGateExpire      = 30; //Days to expire age gate cookie
+
+  this.init = function (e) {
+    if (!e) return;
+    e.preventDefault();
+    //Reset errors
+    this.ageGateErrorSel.html('');
+
+    //Form input
+    var formInput = this.ageGateEl.find('form');
+    var dob = [
+      formInput.find('input[name="dob[yy]"]').val(),
+      formInput.find('input[name="dob[mm]"]').val(),
+      1, //formInput.find('input[name="dob[dd]"]').val(),
+      this.yearsFromNow(17)
+    ];
+    //Validate
+    var checkDOB = new Date(dob[0],dob[1]-1,dob[2]);
+    if (this.isNumeric([dob[0],dob[1],dob[2]])
+    &&dob[0] > 1900
+    &&dob[1] <= 12&&dob[1] > 0
+    &&dob[2] <= 31&&dob[2] > 0) {
+      if (dob[3] >= checkDOB) {
+        //Success
+        this.success();
+      }
+      //Failure and error messages
+      else this.failure('insufficient');
+    }
+    else {
+      this.failure('invalid');
+    }
+  };
+
+  this.success = function () {
+    $.cookie(this.ageGateCookie, 1, { expires: this.ageGateExpire, path: '/', domain: 'bladeandsoul.com'});
+    // $(document).ncsCustomEventTracker({"cCategory" : "Age Gate", "cAction" : "Success", cLabel:window.location.pathname});
+
+    //remove all age gates
+    $('.age-gate').remove();
+
+    if (isLandingPage) {
+      $("#landing-page .cbt-signup").addClass('show');
+      $("#subscriber-email").focus();
+    }
+  };
+
+  this.failure = function (errMsg) {
+    var msg = "Please check your input.";
+    switch(errMsg){
+      case 'insufficient' :
+      var date = new Date(),
+      days = 3;
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      $.cookie(this.ageGateCookie,'failed',{expires: date, path: '/', domain: 'bladeandsoul.com'});
+
+      $(".age-gate-show .agegate-container, .age-gate-show .instructions, .age-gate-show button[type='submit']").remove();
+      $(".age-gate-show .age-gate-msg").addClass('insufficient-msg');
+
+      msg = "Sorry, you do not meet the minimum requirements.";
+      break;
+      case 'invalid' :
+      msg = "Sorry, your entry was invalid.";
+      break;
+      default:
+    }
+    this.ageGateErrorSel.text(msg);
+    // if (errMsgSel == '.age-gate-error-insufficient') {
+    //     $.cookie(this.ageGateCookie,0,{expires: this.ageGateExpire, path: '/'});
+    //     //JEaster: event tracking for perm failure
+    //     // $(document).ncsCustomEventTracker({"cCategory" : "Age Gate", "cAction" : "Fail", cLabel:window.location.pathname});
+    //     return;
+    // }
+    // $(this.ageGateErrorSel+","+this.ageGateSel+" "+errMsgSel).show();
+
+  };
+
+  this.isNumeric = function (c) { for (x=0;x<c.length;x++) if (!c[x].toString().match(/^\d+$/)) return false; return true;};
+
+  this.yearsFromNow = function(n){
+    var today = new Date(),
+    dd = today.getDate(),
+    mm = today.getMonth()+1,
+    yyyy = today.getFullYear() - n;
+
+    return new Date(yyyy,mm - 1,dd);
+  };
+
+  this.init(e);
+}

@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<html class="no-js"> 
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Blade &amp; Soul</title>
+<link rel="shortcut icon" href="img/global/favicon.ico">
+<meta name="description" content="Begin a heroic journey to confront dark forces and seek vengeance as a master of the martial arts in Blade & Soul, the free-to-play MMORPG."/>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="bakaexpert/fonts.css" type="text/css" />
+<link rel="stylesheet" href="css/vendor.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/navigation.css">
+
+</head>
+<body data-lang="en" id="game-classes-detail-page-blade-master" class="classes-detail-page full-content-class multiGallery" data-media-tags="blade-master">
+
+<script src="js/vendor.js"></script>
+
+<div class="age-gate-overlay age-gate">
+<div class="content-wrapper">
+<div class="row age-gate-content">
+<div class="columns">
+<div class="input-container">
+<div class="row">
+<div class="columns bns-age-gate-logo">
+<img src="img/global/site_age_gate_logo.jpg" alt="Blade &amp; Soul" />
+</div>
+</div>
+<form>
+<div class="row instructions">
+<p>Enter Your Date of Birth</p>
+</div>
+<div class="row agegate-container">
+<div class="columns small-centered input-container">
+<div class="row">
+<div class="columns small-3">
+<input class="agegate-field agegate-month" pattern="\d*" type="text" maxlength="2" name="dob[mm]" placeholder="MM">
+</div>
+<!--<div class="columns small-3 day-column" style="display: none !important;">
+<input class="agegate-field agegate-day" pattern="\d*" type="text" maxlength="2" name="dob[dd]" placeholder="DD" value="1">
+</div>-->
+<div class="columns small-3 end">
+<input class="agegate-field agegate-year" pattern="\d*" maxlength="4" type="text" name="dob[yy]" placeholder="YYYY">
+</div>
+</div>
+</div>
+</div>
+<div class="age-gate-msg"></div>
+<button disabled id="age-gate-submit-btn" type="submit" form="" value=""><span>Submit</span></button>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="js/agegate.js" ></script>
+<script>
+
+/**
+* AgeGate
+*/
+var isLandingPage = $('body').hasClass('freetoplay-landing-page');
+
+runAgegate(isLandingPage);
+
+</script>
+
+</script>
+
+
+
+<!-- Holds navigation bat react component -->
+<!-- <script src="/js/navigation.js"></script> -->
+
+<div id="new-main-nav-app" class="contain-to-grid"></div>
+<div data-reactroot="" id="new-main-nav" onclick="toggleMenu()" style="top: 0px; position: fixed;">
+<div class="menu-btn">
+<div class="menu-icon"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="menu-contain">
+<a class="logo-link" href="#">
+<img class="logo" src="img/nav-bs-logo.png" />
+</a>
+<ul>
+
+<li class=""><a class="navlink" href="#">Home</a></li>
+<li class=""><a class="navlink" href="/about.html">About Game</a></li>
+<li class=""><a class="navlink" href="/races.html">Races</a></li>
+<li class=""><a class="navlink" href="/factions.html">Factions</a></li>
+<li class="active"><a class="navlink" href="/classes.html">Classes</a></li>
+<li class=""><a class="navlink" href="/register.html">Register</a></li>
+<li class=""><a class="navlink" href="/downloads.html">Downloads</a></li>
+
+</ul>
+<a class="play-free-btn logged-out" href="/downloads.html"><div class="play-free-btn-inner">PLAY FREE NOW</div></a>
+</div>
+</div>
+
+<div class="character-classes-details show-for-large-up">
+<div id="section-forcemaster" class="class-section forcemaster">
+<div class="class-container">
+
+<div class="row">
+<div class="medium-6 columns class-detail">
+<div class="custom-dropdown">
+<div class="default-text"></div>
+<i class="fa fa-angle-down"></i>
+<div class="items-list">
+
+<a class="item" href="/blade-master.html">
+Blade Master
+</a>
+<a class="item " href="/destroyer.html">
+Destroyer
+</a>
+<a class="item " href="/summoner.html">
+Summoner
+</a>
+<a class="item active-item" href="/forcemaster.html">
+Force Master
+</a>
+<a class="item " href="/kung-fu-master.html">
+Kung Fu Master
+</a>
+<a class="item " href="/assassin.html">
+Assassin
+</a>
+<a class="item " href="/blade-dancer.html">
+Blade Dancer
+</a>
+<a class="item " href="/warlock.html">
+Warlock
+</a>
+<a class="item " href="/soul-fighter.html">
+Soul Fighter
+</a>
+</div>
+</div>
+
+<!--<div class="custom-dropdown">-->
+<!--<div class="default-text">blademaster</div>-->
+<!--<i class="fa fa-caret-down"></i>-->
+<!--<div class="items-list">-->
+<!---->
+<!--</div>-->
+<!--</div>-->
+
+
+<div class="classes-nav">
+<div class="inner-classes-nav">
+<div class="row">
+<div id="0" class="small-1 columns">
+<a href="/blade-master.html" class="class-icon blademaster">
+<span>Blade Master</span>
+</a>
+</div>
+<div id="1" class="small-1 columns ">
+<a href="/destroyer.html" class="class-icon destroyer">
+<span>Destroyer</span>
+</a>
+</div>
+<div id="2" class="small-1 columns">
+<a href="/summoner.html" class="class-icon summoner">
+<span>Summoner</span>
+</a>
+</div>
+<div id="3" class="small-1 columns active">
+<a href="/force-master.html" class="class-icon forcemaster">
+<span>Force Master</span>
+</a>
+</div>
+<div id="4" class="small-1 columns ">
+<a href="/kung-fu-master.html" class="class-icon kungfumaster">
+<span>Kung Fu Master</span>
+</a>
+</div>
+<div id="5" class="small-1 columns ">
+<a href="/assassin.html" class="class-icon assassin">
+<span>Assassin</span>
+</a>
+</div>
+<div id="6" class="small-1 columns ">
+<a href="/blade-dancer.html" class="class-icon bladedancer">
+<span>Blade Dancer</span>
+</a>
+</div>
+<div id="7" class="small-1 columns ">
+<a href="/warlock.html" class="class-icon warlock">
+<span>Warlock</span>
+</a>
+</div>
+<div id="8" class="small-1 columns ">
+<a href="/soul-fighter.html" class="class-icon soulfighter">
+<span>Soul Fighter</span>
+</a>
+</div>
+
+</div><!-- .row -->
+</div>
+</div>
+
+            <h2>Force Master</h2>
+            <div class="class-video-loop">
+              <div class="detail-video-button">
+                <video autoplay="" loop="" muted="" id="bgvid" poster="/video/classes/force-master/force_master_fallback_video_thumb.jpg">
+                  <source src="/video/classes/force-master/force_master_button_loop.ogv" type="video/ogv">
+                  <source src="/video/classes/force-master/force_master_button_loop.webm" type="video/webm">
+                  <source src="/video/classes/force-master/force_master_button_loop.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div id="video-forcemaster" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                <div class="responsive-video-container">
+                  <iframe id="fullVideo" width="560" height="315" src="./forcemaster_files/N_1msQf4Vjg.html" frameborder="0" allowfullscreen="" data-gtm-yt="true" data-gtm-yt-inspected-1_25="true" data-gtm-yt-inspected-8849921_34="true" data-gtm-yt-inspected-1_27="true"></iframe>
+                </div>
+                <a class="close-reveal-modal" aria-label="Close">×</a>
+              </div>
+            </div>
+            <p class="difficulty normal"><span class="difficulty-label">Difficulty:</span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> <span class="difficulty-level">Normal</span></p>
+            <div class="description"><p>Unlike other classes, the Force Master attacks at long range, dealing heavy damage from a safe distance. Their swift strikes and ability to remain on the move while attacking makes them a dynamic addition to any battle. They are less durable than the other classes, so careful positioning is key to their survival.</p><p>The Force Master is able to freely switch between elements; their searing Fire abilities stack damage with repeated attacks, while the freezing Ice powers control the battlefield and enhance their defenses. With careful focus they can even snatch an enemy and hold them suspended in the air, leaving that foe helpless against incoming attacks.</p><p>Other classes can’t compete with the Force Master’s ability to handle groups of enemies, but PvP arenas prove more challenging than ever. Only a truly skilled Force Master can overcome the direct attention of a fellow warrior.</p></div>
+
+            <p class="available-races">Available Races: <a href="/races.html#races-yun">Yun</a>, <a href="/races.html#races-lyn">Lyn</a>, <a href="/races.html#races-gon">Gon</a></p>
+          </div>
+        </div><!--  .row -->
+        <div class="row">
+          <div class="medium-12 columns class-media">
+            <div class="xlarge-4 columns class-media-detail">
+              <div class="move-chart">
+                <a href="/img/game/classes/moves_chart/forcemaster/force_master_moves_chart_en.pdf" target="_new">
+                  <h6 class="skills-header">Force Master Move Chart</h6>
+                </a>
+                <div class="move-chart-wrap">
+                  <a href="/img/game/classes/moves_chart/forcemaster/force_master_moves_chart_en.pdf" target="_new">
+                    <img class="move-chart-thumb" src="./forcemaster_files/forcemaster_detailpage_moves_chart_thumb.jpg">
+                    <div class="media-label">
+                      <div class="media-label-content">
+                        <p class="type">Move Chart</p>
+                        <h3>Force Master</h3>
+                        <div class="media-download"></div>
+                      </div><!--  .media-label -->
+                    </div>
+                  </a>
+                </div>
+              </div><!--.move-chart-->
+              <div class="skill-details">
+                <h6 class="skills-header">Notable Skills</h6>
+                <ul class="skills-list">
+                  <li class="class-skill blazing-palm">
+                    <div class="icon-container"><img src="./forcemaster_files/icon_skill_forcemaster_blazingpalm.png"></div>
+                    <span>Blazing Palm</span>
+                    <div class="tooltipSkill"><h4>Blazing Palm</h4><p>Switches to Fire Stance</p></div>
+                  </li>
+                  <li class="class-skill frost-palm">
+                    <div class="icon-container"><img src="./forcemaster_files/icon_skill_forcemaster_frostpalm.png"></div>
+                    <span>Frost Palm</span>
+                    <div class="tooltipSkill"><h4>Frost Palm</h4><p>Switches to Frost Stance</p></div>
+                  </li>
+                  <li class="class-skill phantom-grip">
+                    <div class="icon-container"><img src="./forcemaster_files/icon_skill_forcemaster_phantomgrip.png"></div>
+                    <span>Phantom Grip</span>
+                  </li>
+                  <li class="class-skill impact">
+                    <div class="icon-container"><img src="./forcemaster_files/icon_skill_forcemaster_impact.png"></div>
+                    <span>Impact</span>
+                  </li>
+                </ul>
+              </div>
+            </div><!--4 col-->
+            <div class="xlarge-4 columns media class-media-detail screenshots" data-category="screenshots" data-tags="forcemaster">
+              <div class="skill-detail-gallery">
+                <h6 class="skills-header">Screenshots</h6>
+                <div class="media-items large-collapse screenshots-media-section">
+                  <!-- <div class="grid-sizer"></div> -->
+                <div class="media-item" data-clearing-id="352b3c2b-72d6-468b-b019-2cefce835976" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Force Master 06</h3></div><!--  .media-label --></div><img src="./forcemaster_files/thumb_force_master_06.jpg" alt="Force Master 06"></div></div><div class="media-item" data-clearing-id="05d31d0c-39ba-41c1-9084-69d2c249948a" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Force Master 05</h3></div><!--  .media-label --></div><img src="./forcemaster_files/thumb_force_master_05.jpg" alt="Force Master 05"></div></div><div class="media-item" data-clearing-id="e622647f-c71a-4173-a963-5e932c6591b2" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Force Master 04</h3></div><!--  .media-label --></div><img src="./forcemaster_files/thumb_force_master_04.jpg" alt="Force Master 04"></div></div><div class="media-item" data-clearing-id="9ee73209-7055-4208-8921-19403d4bdde8" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Force Master 03</h3></div><!--  .media-label --></div><img src="./forcemaster_files/thumb_force_master_03.jpg" alt="Force Master 03"></div></div><div class="media-item" data-clearing-id="707de45a-6aee-4fc6-b1b8-66da8810209a" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Force Master 02</h3></div><!--  .media-label --></div><img src="./forcemaster_files/thumb_force_master_02.jpg" alt="Force Master 02"></div></div><div class="media-item" data-clearing-id="2e41ea3b-5ca7-46ef-b591-d98e712959ee" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Force Master 01</h3></div><!--  .media-label --></div><img src="./forcemaster_files/thumb_force_master_01.jpg" alt="Force Master 01"></div></div></div>
+                <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/force_master_06.jpg" data-clearing-id="352b3c2b-72d6-468b-b019-2cefce835976"><img data-title="Force Master 06" data-media-type="Screenshot" data-filter-type="Screenshot" src="./forcemaster_files/carousel_thumb_force_master_06.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/force_master_05.jpg" data-clearing-id="05d31d0c-39ba-41c1-9084-69d2c249948a"><img data-title="Force Master 05" data-media-type="Screenshot" data-filter-type="Screenshot" src="./forcemaster_files/carousel_thumb_force_master_05.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/force_master_04.jpg" data-clearing-id="e622647f-c71a-4173-a963-5e932c6591b2"><img data-title="Force Master 04" data-media-type="Screenshot" data-filter-type="Screenshot" src="./forcemaster_files/carousel_thumb_force_master_04.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/force_master_03.jpg" data-clearing-id="9ee73209-7055-4208-8921-19403d4bdde8"><img data-title="Force Master 03" data-media-type="Screenshot" data-filter-type="Screenshot" src="./forcemaster_files/carousel_thumb_force_master_03.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/force_master_02.jpg" data-clearing-id="707de45a-6aee-4fc6-b1b8-66da8810209a"><img data-title="Force Master 02" data-media-type="Screenshot" data-filter-type="Screenshot" src="./forcemaster_files/carousel_thumb_force_master_02.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/force_master_01.jpg" data-clearing-id="2e41ea3b-5ca7-46ef-b591-d98e712959ee"><img data-title="Force Master 01" data-media-type="Screenshot" data-filter-type="Screenshot" src="./forcemaster_files/carousel_thumb_force_master_01.jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                <script>
+                  var _clearingLabels = {
+                    viewMore : "View More",
+                    close : "Close"
+                  };
+                </script>
+              </div>
+            </div>
+            <div class="xlarge-4 columns media class-media-detail wallpaper" data-category="wallpaper" data-tags="forcemaster">
+              <div class="skill-detail-gallery">
+                <h6 class="skills-header">Wallpaper</h6>
+                <div class="media-items large-collapse wallpaper-media-section">
+                  <!-- <div class="grid-sizer"></div> -->
+                <div class="media-item" data-clearing-id="4f3d8f1e-99db-45ab-b1e8-b376ea357f35" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Force Master 02</h3></div><!--  .media-label --></div><img src="./forcemaster_files/force_master_02_thumbnail_420x260.jpg" alt="Force Master 02"></div></div><div class="media-item" data-clearing-id="edd78bcf-e5a5-4ca6-868c-5b8d70bc7fb6" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Force Master 01</h3></div><!--  .media-label --></div><img src="./forcemaster_files/force_master_01_thumbnail_420x260.jpg" alt="Force Master 01"></div></div><div class="media-item" data-clearing-id="f2619177-678e-41fa-9973-fd3615ca6eff" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Force Master Moves Chart</h3></div><!--  .media-label --></div><img src="./forcemaster_files/force_master_moves_chart_thumbnail_420x260.jpg" alt="Force Master Moves Chart"></div></div></div>
+                <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/force_master_02_wide_2880x1800.jpg" data-clearing-id="4f3d8f1e-99db-45ab-b1e8-b376ea357f35"><img data-title="Force Master 02" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/force_master_02_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/force_master_02_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/force_master_02_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/force_master_02_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./forcemaster_files/force_master_02_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/force_master_01_wide_2880x1800.jpg" data-clearing-id="edd78bcf-e5a5-4ca6-868c-5b8d70bc7fb6"><img data-title="Force Master 01" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/force_master_01_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/force_master_01_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/force_master_01_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/force_master_01_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./forcemaster_files/force_master_01_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/force_master_moves_chart_wide_2880x1800_en.jpg" data-clearing-id="f2619177-678e-41fa-9973-fd3615ca6eff"><img data-title="Force Master Moves Chart" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/force_master_moves_chart_wide_2880x1800_en.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/force_master_moves_chart_standard_2048x1536_en.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/force_master_moves_chart_tablet_2048x2048_en.jpg" data-filter-type="Wallpaper" src="./forcemaster_files/force_master_moves_chart_carousel_160x100.jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                <script>
+                  var _clearingLabels = {
+                    viewMore : "View More",
+                    close : "Close"
+                  };
+                </script>
+              </div>
+            </div>
+          </div><!-- 12 col -->
+        </div><!--  .row -->
+      
+  </div>
+</div><!--  .class-section -->
+
+</div>
+
+<div class="character-classes-details hide-for-large-up">
+    <div id="section-mobile-forcemaster" class="class-mobile-section forcemaster">
+      
+            <div class="custom-dropdown">
+  <div class="default-text">
+      Force Master
+      </div>
+  <i class="fa fa-angle-down"></i>
+  <div class="items-list">
+
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/blade-master">
+      Blade Master
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/destroyer">
+      Destroyer
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/summoner">
+      Summoner
+      </a>
+      <a class="item active-item" href="https://www.bladeandsoul.com/en/game/classes/force-master">
+      Force Master
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/kung-fu-master">
+      Kung Fu Master
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/assassin">
+      Assassin
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/blade-dancer">
+      Blade Dancer
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/warlock">
+      Warlock
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/soul-fighter">
+      Soul Fighter
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/gunslinger">
+      Gunslinger
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/warden">
+      Warden
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/zen-archer">
+        Zen Archer
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/astromancer">
+        Astromancer
+      </a>
+  </div>
+</div>
+
+<!--<div class="custom-dropdown">-->
+  <!--<div class="default-text">forcemaster</div>-->
+  <!--<i class="fa fa-caret-down"></i>-->
+  <!--<div class="items-list">-->
+    <!---->
+  <!--</div>-->
+<!--</div>-->
+
+
+          <div class="row">
+            <div class="columns copy">
+              <div class="class-info">
+                <h2>Force Master</h2>
+                <p class="difficulty normal"><span class="difficulty-label">Difficulty:</span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> <span class="difficulty-level">Normal</span></p>
+                <div class="description"><p>Unlike other classes, the Force Master attacks at long range, dealing heavy damage from a safe distance. Their swift strikes and ability to remain on the move while attacking makes them a dynamic addition to any battle. They are less durable than the other classes, so careful positioning is key to their survival.</p><p>The Force Master is able to freely switch between elements; their searing Fire abilities stack damage with repeated attacks, while the freezing Ice powers control the battlefield and enhance their defenses. With careful focus they can even snatch an enemy and hold them suspended in the air, leaving that foe helpless against incoming attacks.</p><p>Other classes can’t compete with the Force Master’s ability to handle groups of enemies, but PvP arenas prove more challenging than ever. Only a truly skilled Force Master can overcome the direct attention of a fellow warrior.</p></div>
+
+                <div class="available-races-section">
+                  <span class="available-races">Available Races: </span>
+                  <span class="classes"><a href="/races.html#races-yun">Yun</a>, <a href="/races.html#races-lyn">Lyn</a>, <a href="/races.html#races-gon">Gon</a></span>
+                </div>
+              </div>
+              <div class="move-chart">
+                <a href="/img/game/classes/moves_chart/forcemaster/force_master_moves_chart_en.pdf" target="_new"><h6 class="skills-header">Force Master Move Chart</h6></a>
+                <a href="/img/game/classes/moves_chart/forcemaster/force_master_moves_chart_en.pdf" target="_new"><img class="move-chart-thumb" src="./forcemaster_files/forcemaster_detailpage_moves_chart_thumb.jpg"></a>
+              </div><!--.move-chart-->
+              <div class="skill-details">
+                <h6 class="skills-header">Notable Skills</h6>
+                <div class="skill-list-container">
+                  <div class="skills-list row small-collapse">
+                    <div class="columns small-6 class-skill class-skill-blazing-palm">
+                      <div class="icon-container"><img src="./forcemaster_files/icon_skill_forcemaster_blazingpalm.png"></div>
+                      <div class="text-container">
+                        <div class="skill-label">Blazing Palm</div>
+                        <p>Switches to Fire Stance</p>
+                      </div>
+                    </div>
+                    <div class="columns small-6 class-skill class-skill-frost-palm">
+                      <div class="icon-container"><img src="./forcemaster_files/icon_skill_forcemaster_frostpalm.png"></div>
+                      <div class="text-container">
+                        <div class="skill-label">Frost Palm</div>
+                        <p>Switches to Frost Stance</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills-list row small-collapse">
+                    <div class="columns small-6 class-skill class-skill-phantom-grip">
+                      <div class="icon-container"><img src="./forcemaster_files/icon_skill_forcemaster_phantomgrip.png"></div>
+                      <div class="text-container">
+                        <div class="skill-label">Phantom Grip</div>
+                        &nbsp;
+                      </div>
+                    </div>
+                    <div class="columns small-6 class-skill class-skill-impact">
+                      <div class="icon-container"><img src="./forcemaster_files/icon_skill_forcemaster_impact.png"></div>
+                      <div class="text-container">
+                        <div class="skill-label">Impact</div>
+                        &nbsp;
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media class-media-detail screenshots-mobile" data-category="screenshots" data-tags="forcemaster">
+                    <div class="skill-details">
+                      <h6 class="skills-header">Screenshots</h6>
+                      <div class="media-items medium-collapse screenshots-mobile-media-section">
+                        <div class="grid-sizer"></div>
+                      <div class="media-item" data-clearing-id="352b3c2b-72d6-468b-b019-2cefce835976mobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Force Master 06</h3></div><!--  .media-label --></div><img src="./forcemaster_files/thumb_force_master_06.jpg" alt="Force Master 06"></div></div><div class="media-item" data-clearing-id="05d31d0c-39ba-41c1-9084-69d2c249948amobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Force Master 05</h3></div><!--  .media-label --></div><img src="./forcemaster_files/thumb_force_master_05.jpg" alt="Force Master 05"></div></div><div class="media-item" data-clearing-id="e622647f-c71a-4173-a963-5e932c6591b2mobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Force Master 04</h3></div><!--  .media-label --></div><img src="./forcemaster_files/thumb_force_master_04.jpg" alt="Force Master 04"></div></div><div class="media-item" data-clearing-id="9ee73209-7055-4208-8921-19403d4bdde8mobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Force Master 03</h3></div><!--  .media-label --></div><img src="./forcemaster_files/thumb_force_master_03.jpg" alt="Force Master 03"></div></div><div class="media-item" data-clearing-id="707de45a-6aee-4fc6-b1b8-66da8810209amobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Force Master 02</h3></div><!--  .media-label --></div><img src="./forcemaster_files/thumb_force_master_02.jpg" alt="Force Master 02"></div></div><div class="media-item" data-clearing-id="2e41ea3b-5ca7-46ef-b591-d98e712959eemobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Force Master 01</h3></div><!--  .media-label --></div><img src="./forcemaster_files/thumb_force_master_01.jpg" alt="Force Master 01"></div></div></div>
+                      <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/force_master_06.jpg" data-clearing-id="352b3c2b-72d6-468b-b019-2cefce835976mobile"><img data-title="Force Master 06" data-media-type="Screenshot" data-filter-type="Screenshot" src="./forcemaster_files/carousel_thumb_force_master_06.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/force_master_05.jpg" data-clearing-id="05d31d0c-39ba-41c1-9084-69d2c249948amobile"><img data-title="Force Master 05" data-media-type="Screenshot" data-filter-type="Screenshot" src="./forcemaster_files/carousel_thumb_force_master_05.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/force_master_04.jpg" data-clearing-id="e622647f-c71a-4173-a963-5e932c6591b2mobile"><img data-title="Force Master 04" data-media-type="Screenshot" data-filter-type="Screenshot" src="./forcemaster_files/carousel_thumb_force_master_04.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/force_master_03.jpg" data-clearing-id="9ee73209-7055-4208-8921-19403d4bdde8mobile"><img data-title="Force Master 03" data-media-type="Screenshot" data-filter-type="Screenshot" src="./forcemaster_files/carousel_thumb_force_master_03.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/force_master_02.jpg" data-clearing-id="707de45a-6aee-4fc6-b1b8-66da8810209amobile"><img data-title="Force Master 02" data-media-type="Screenshot" data-filter-type="Screenshot" src="./forcemaster_files/carousel_thumb_force_master_02.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/force_master_01.jpg" data-clearing-id="2e41ea3b-5ca7-46ef-b591-d98e712959eemobile"><img data-title="Force Master 01" data-media-type="Screenshot" data-filter-type="Screenshot" src="./forcemaster_files/carousel_thumb_force_master_01.jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                      <script>
+                        var _clearingLabels = {
+                          viewMore : "View More",
+                          close : "Close"
+                        };
+                      </script>
+                    </div>
+                  </div>
+                  <div class="media class-media-detail wallpaper-mobile" data-category="wallpaper" data-tags="forcemaster">
+                    <div class="skill-details">
+                      <h6 class="skills-header">Wallpaper</h6>
+                      <div class="media-items medium-collapse wallpaper-mobile-media-section" style="position: relative; height: 0px;">
+                        <div class="grid-sizer"></div>
+                      <div class="media-item" data-clearing-id="4f3d8f1e-99db-45ab-b1e8-b376ea357f35mobile" data-media-type="Wallpaper" data-filter-type="Wallpaper" style="position: absolute; opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 0.4s;"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Force Master 02</h3></div><!--  .media-label --></div><img src="./forcemaster_files/force_master_02_thumbnail_420x260.jpg" alt="Force Master 02"></div></div><div class="media-item" data-clearing-id="edd78bcf-e5a5-4ca6-868c-5b8d70bc7fb6mobile" data-media-type="Wallpaper" data-filter-type="Wallpaper" style="position: absolute; opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 0.4s;"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Force Master 01</h3></div><!--  .media-label --></div><img src="./forcemaster_files/force_master_01_thumbnail_420x260.jpg" alt="Force Master 01"></div></div><div class="media-item" data-clearing-id="f2619177-678e-41fa-9973-fd3615ca6effmobile" data-media-type="Wallpaper" data-filter-type="Wallpaper" style="position: absolute; opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 0.4s;"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Force Master Moves Chart</h3></div><!--  .media-label --></div><img src="./forcemaster_files/force_master_moves_chart_thumbnail_420x260.jpg" alt="Force Master Moves Chart"></div></div></div>
+                      <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/force-master/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/force_master_02_wide_2880x1800.jpg" data-clearing-id="4f3d8f1e-99db-45ab-b1e8-b376ea357f35mobile"><img data-title="Force Master 02" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/force_master_02_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/force_master_02_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/force_master_02_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/force_master_02_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./forcemaster_files/force_master_02_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/force_master_01_wide_2880x1800.jpg" data-clearing-id="edd78bcf-e5a5-4ca6-868c-5b8d70bc7fb6mobile"><img data-title="Force Master 01" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/force_master_01_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/force_master_01_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/force_master_01_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/force_master_01_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./forcemaster_files/force_master_01_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/force_master_moves_chart_wide_2880x1800_en.jpg" data-clearing-id="f2619177-678e-41fa-9973-fd3615ca6effmobile"><img data-title="Force Master Moves Chart" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/force_master_moves_chart_wide_2880x1800_en.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/force_master_moves_chart_standard_2048x1536_en.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/force_master_moves_chart_tablet_2048x2048_en.jpg" data-filter-type="Wallpaper" src="./forcemaster_files/force_master_moves_chart_carousel_160x100.jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                      <script>
+                        var _clearingLabels = {
+                          viewMore : "View More",
+                          close : "Close"
+                        };
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+</div><!--  .class-section -->
+
+</div>
+
+
+<!-- added footer-freetoplay.html for freetoplay page ONLY -->
+<div id="footer-playfreenow">
+<div class="row">
+<div class="columns">
+<div class="copy">
+<a href="/downloads.html" class="playfreenow icon">
+<span class="large">Play Free Now</span>
+</a>
+<a href="/downloads.html" class="downloadnow icon">
+<span class="large">Download Now</span>
+</a>
+</div>
+</div>
+</div><!--  .row -->
+</div>
+
+<div id="footer">
+<div class="top">
+<div class="row footer-links">
+<div class="small-12 columns footer-link-column-left sns-only-footer-links">
+<div class="small-12 small-centered columns column-sns">
+<h4>Follow Us</h4>
+<ul class="footer-list">
+<li>
+<a href="#" target="_blank"><i class="fa fa-facebook sns-footer"></i> Facebook</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitter sns-footer"></i> Twitter</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitch sns-footer"></i> Twitch</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-instagram sns-footer"></i> Instagram</a>
+</li>
+</ul>
+</div>
+</div>
+
+</div><!-- .row -->
+<div class="row logo">
+<div class="columns bns-logo">
+<a href="#"><img src="img/global/footer-bns-logo.png" alt="Blade &amp; Soul"></a>
+</div>
+</div>
+<div class="row legal">
+<div class="columns desktop copyright">
+<div class="copy">
+<p>©2019 NCSOFT Corporation. All rights reserved. All trademarks are the property of their respective owners.</p>
+</div><!--  .copy -->
+<a href="#" target="_blank" class="gamerating-logo gamerating-en gamerating-ESRB">
+<img src="img/global/BnS_ESRB_RatedM.png" alt="ESRB" class="rating">
+</a>
+</div>
+</div><!-- .row -->
+
+</div><!--  .top -->
+</div><!-- #footer  -->
+
+
+<script src="js/main.js"></script>
+<script src="js/components-20210127.js"></script>
+<script src="/js/menu.js"></script>
+</body>
+
+</html>

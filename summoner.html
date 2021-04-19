@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html class="no-js"> 
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Blade &amp; Soul</title>
+<link rel="shortcut icon" href="img/global/favicon.ico">
+<meta name="description" content="Begin a heroic journey to confront dark forces and seek vengeance as a master of the martial arts in Blade & Soul, the free-to-play MMORPG."/>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="bakaexpert/fonts.css" type="text/css" />
+<link rel="stylesheet" href="css/vendor.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/navigation.css">
+
+</head>
+<body data-lang="en" id="game-classes-detail-page-blade-master" class="classes-detail-page full-content-class multiGallery" data-media-tags="blade-master">
+
+<script src="js/vendor.js"></script>
+
+<div class="age-gate-overlay age-gate">
+<div class="content-wrapper">
+<div class="row age-gate-content">
+<div class="columns">
+<div class="input-container">
+<div class="row">
+<div class="columns bns-age-gate-logo">
+<img src="img/global/site_age_gate_logo.jpg" alt="Blade &amp; Soul" />
+</div>
+</div>
+<form>
+<div class="row instructions">
+<p>Enter Your Date of Birth</p>
+</div>
+<div class="row agegate-container">
+<div class="columns small-centered input-container">
+<div class="row">
+<div class="columns small-3">
+<input class="agegate-field agegate-month" pattern="\d*" type="text" maxlength="2" name="dob[mm]" placeholder="MM">
+</div>
+<!--<div class="columns small-3 day-column" style="display: none !important;">
+<input class="agegate-field agegate-day" pattern="\d*" type="text" maxlength="2" name="dob[dd]" placeholder="DD" value="1">
+</div>-->
+<div class="columns small-3 end">
+<input class="agegate-field agegate-year" pattern="\d*" maxlength="4" type="text" name="dob[yy]" placeholder="YYYY">
+</div>
+</div>
+</div>
+</div>
+<div class="age-gate-msg"></div>
+<button disabled id="age-gate-submit-btn" type="submit" form="" value=""><span>Submit</span></button>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="js/agegate.js" ></script>
+<script>
+
+/**
+* AgeGate
+*/
+var isLandingPage = $('body').hasClass('freetoplay-landing-page');
+
+runAgegate(isLandingPage);
+
+</script>
+
+</script>
+
+
+
+<!-- Holds navigation bat react component -->
+<!-- <script src="/js/navigation.js"></script> -->
+
+<div id="new-main-nav-app" class="contain-to-grid"></div>
+<div data-reactroot="" id="new-main-nav" onclick="toggleMenu()" style="top: 0px; position: fixed;">
+<div class="menu-btn">
+<div class="menu-icon"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="menu-contain">
+<a class="logo-link" href="#">
+<img class="logo" src="img/nav-bs-logo.png" />
+</a>
+<ul>
+
+<li class=""><a class="navlink" href="#">Home</a></li>
+<li class=""><a class="navlink" href="/about.html">About Game</a></li>
+<li class=""><a class="navlink" href="/races.html">Races</a></li>
+<li class=""><a class="navlink" href="/factions.html">Factions</a></li>
+<li class="active"><a class="navlink" href="/classes.html">Classes</a></li>
+<li class=""><a class="navlink" href="/register.html">Register</a></li>
+<li class=""><a class="navlink" href="/downloads.html">Downloads</a></li>
+
+</ul>
+<a class="play-free-btn logged-out" href="/downloads.html"><div class="play-free-btn-inner">PLAY FREE NOW</div></a>
+</div>
+</div>
+
+<div class="character-classes-details show-for-large-up">
+<div id="section-summoner" class="class-section summoner">
+<div class="class-container">
+
+<div class="row">
+<div class="medium-6 columns class-detail">
+<div class="custom-dropdown">
+<div class="default-text"></div>
+<i class="fa fa-angle-down"></i>
+<div class="items-list">
+
+<a class="item" href="/blade-master.html">
+Blade Master
+</a>
+<a class="item " href="/destroyer.html">
+Destroyer
+</a>
+<a class="item active-item" href="/summoner.html">
+Summoner
+</a>
+<a class="item " href="/forcemaster.html">
+Force Master
+</a>
+<a class="item " href="/kung-fu-master.html">
+Kung Fu Master
+</a>
+<a class="item " href="/assassin.html">
+Assassin
+</a>
+<a class="item " href="/blade-dancer.html">
+Blade Dancer
+</a>
+<a class="item " href="/warlock.html">
+Warlock
+</a>
+<a class="item " href="/soul-fighter.html">
+Soul Fighter
+</a>
+</div>
+</div>
+
+<!--<div class="custom-dropdown">-->
+<!--<div class="default-text">blademaster</div>-->
+<!--<i class="fa fa-caret-down"></i>-->
+<!--<div class="items-list">-->
+<!---->
+<!--</div>-->
+<!--</div>-->
+
+
+<div class="classes-nav">
+<div class="inner-classes-nav">
+<div class="row">
+<div id="0" class="small-1 columns">
+<a href="/blade-master.html" class="class-icon blademaster">
+<span>Blade Master</span>
+</a>
+</div>
+<div id="1" class="small-1 columns ">
+<a href="/destroyer.html" class="class-icon destroyer">
+<span>Destroyer</span>
+</a>
+</div>
+<div id="2" class="small-1 columns active">
+<a href="/summoner.html" class="class-icon summoner">
+<span>Summoner</span>
+</a>
+</div>
+<div id="3" class="small-1 columns ">
+<a href="/force-master.html" class="class-icon forcemaster">
+<span>Force Master</span>
+</a>
+</div>
+<div id="4" class="small-1 columns ">
+<a href="/kung-fu-master.html" class="class-icon kungfumaster">
+<span>Kung Fu Master</span>
+</a>
+</div>
+<div id="5" class="small-1 columns ">
+<a href="/assassin.html" class="class-icon assassin">
+<span>Assassin</span>
+</a>
+</div>
+<div id="6" class="small-1 columns ">
+<a href="/blade-dancer.html" class="class-icon bladedancer">
+<span>Blade Dancer</span>
+</a>
+</div>
+<div id="7" class="small-1 columns ">
+<a href="/warlock.html" class="class-icon warlock">
+<span>Warlock</span>
+</a>
+</div>
+<div id="8" class="small-1 columns ">
+<a href="/soul-fighter.html" class="class-icon soulfighter">
+<span>Soul Fighter</span>
+</a>
+</div>
+
+</div><!-- .row -->
+</div>
+</div>
+
+            <h2>Summoner</h2>
+            <div class="class-video-loop">
+              <div class="detail-video-button">
+                <video autoplay="" loop="" muted="" id="bgvid" poster="/video/classes/summoner/summoner_fallback_video_thumb2.jpg">
+                  <source src="/video/classes/summoner/summonerloop.ogv" type="video/ogv">
+                  <source src="/video/classes/summoner/summonerloop.webm" type="video/webm">
+                  <source src="/video/classes/summoner/summonerloop.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div id="video-summoner" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                <div class="responsive-video-container">
+                  <iframe id="fullVideo" width="560" height="315" src="./summoner_files/bMJMN4jz5lo.html" frameborder="0" allowfullscreen="" data-gtm-yt="true" data-gtm-yt-inspected-8849921_34="true" data-gtm-yt-inspected-1_27="true" data-gtm-yt-inspected-1_25="true"></iframe>
+                </div>
+                <a class="close-reveal-modal" aria-label="Close">×</a>
+              </div>
+            </div>
+            <p class="difficulty easy"><span class="difficulty-label">Difficulty:</span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> <span class="difficulty-level">Easy</span></p>
+            <div class="description"><p>The Summoner and their Familiar are a team, fighting together to overwhelm their enemies. The Familiar rushes into the thick of it, dealing heavy physical damage and holding the attention of their opponent. Meanwhile, the Summoner hangs back, supporting their Familiar with long range skills that both help their feline friend and hinder their shared enemy.</p><p>Don’t let the adorable appearance of these two fool you. Summoner attacks deal constant damage and can readily control the flow of battle, making them particularly hard to deal with. Even if one part of the team is defeated, they can revive their fallen ally and jump right back into the fight.</p><p>The Summoner and their Familiar are the strongest at transferring health from foes to themselves. While it is a great class for novices, actually mastering the Summoner is a difficult process given their wide range of tactics and abilities.</p></div>
+
+            <p class="available-races">Available Races: <a href="/races.html#races-lyn">Lyn</a></p>
+          </div>
+        </div><!--  .row -->
+        <div class="row">
+          <div class="medium-12 columns class-media">
+            <div class="xlarge-4 columns class-media-detail">
+              <div class="move-chart">
+                <a href="/img/game/classes/moves_chart/summoner/summoner_moves_chart_en.pdf" target="_new">
+                  <h6 class="skills-header">Summoner Move Chart</h6>
+                </a>
+                <div class="move-chart-wrap">
+                  <a href="/img/game/classes/moves_chart/summoner/summoner_moves_chart_en.pdf" target="_new">
+                    <img class="move-chart-thumb" src="./summoner_files/summoner_detailpage_moves_chart_thumb.jpg">
+                    <div class="media-label">
+                      <div class="media-label-content">
+                        <p class="type">Move Chart</p>
+                        <h3>Summoner</h3>
+                        <div class="media-download"></div>
+                      </div><!--  .media-label -->
+                    </div>
+                  </a>
+                </div>
+              </div><!--.move-chart-->
+              <div class="skill-details">
+                <h6 class="skills-header">Notable Skills</h6>
+                <ul class="skills-list">
+                  <li class="class-skill rosethorn">
+                    <div class="icon-container"><img src="./summoner_files/icon_skill_summoner_rosethorn.png"></div>
+                    <span>Rosethorn</span>
+                  </li>
+                  <li class="class-skill rumblebees">
+                    <div class="icon-container"><img src="./summoner_files/icon_skill_summoner_rumblebees.png"></div>
+                    <span>Rumblebees</span>
+                  </li>
+                  <li class="class-skill lunge">
+                    <div class="icon-container"><img src="./summoner_files/icon_skill_summoner_lunge.png"></div>
+                    <span>Lunge</span>
+                  </li>
+                  <li class="class-skill seed-shroud">
+                    <div class="icon-container"><img src="./summoner_files/icon_skill_summoner_seedshroud.png"></div>
+                    <span>Seed Shroud</span>
+                  </li>
+                </ul>
+              </div>
+            </div><!--4 col-->
+            <div class="xlarge-4 columns media class-media-detail screenshots" data-category="screenshots" data-tags="summoner">
+              <div class="skill-detail-gallery">
+                <h6 class="skills-header">Screenshots</h6>
+                <div class="media-items large-collapse screenshots-media-section">
+                  <!-- <div class="grid-sizer"></div> -->
+                <div class="media-item" data-clearing-id="5f39f81b-6432-4c28-a10b-b8c93617ba7a" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Summoner 03</h3></div><!--  .media-label --></div><img src="./summoner_files/thumb_summoner_03.jpg" alt="Summoner 03"></div></div><div class="media-item" data-clearing-id="f367578f-78e1-43a5-b5d8-824693678736" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Summoner 02</h3></div><!--  .media-label --></div><img src="./summoner_files/thumb_summoner_02.jpg" alt="Summoner 02"></div></div><div class="media-item" data-clearing-id="912b36f1-ab5f-4621-b685-14c9b75197ac" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Summoner 01</h3></div><!--  .media-label --></div><img src="./summoner_files/thumb_summoner_01.jpg" alt="Summoner 01"></div></div><div class="media-item" data-clearing-id="9663ecce-d36e-4ae0-b81c-2ccf166a474a" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Summoner 04</h3></div><!--  .media-label --></div><img src="./summoner_files/thumb_summoner_04.jpg" alt="Summoner 04"></div></div><div class="media-item" data-clearing-id="6e7bfbab-db17-48de-a846-cbd25d48511b" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Summoner 05</h3></div><!--  .media-label --></div><img src="./summoner_files/thumb_summoner_05.jpg" alt="Summoner 05"></div></div><div class="media-item" data-clearing-id="1a4adf6a-b0b5-4b6c-b137-850cb1bddbad" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Summoner 06</h3></div><!--  .media-label --></div><img src="./summoner_files/thumb_summoner_06.jpg" alt="Summoner 06"></div></div></div>
+                <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/summoner/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/summoner/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/summoner/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/summoner/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/summoner_03.jpg" data-clearing-id="5f39f81b-6432-4c28-a10b-b8c93617ba7a"><img data-title="Summoner 03" data-media-type="Screenshot" data-filter-type="Screenshot" src="./summoner_files/carousel-thumb_summoner_03.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/summoner_02.jpg" data-clearing-id="f367578f-78e1-43a5-b5d8-824693678736"><img data-title="Summoner 02" data-media-type="Screenshot" data-filter-type="Screenshot" src="./summoner_files/carousel-thumb_summoner_02.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/summoner_01_cp0.jpg" data-clearing-id="912b36f1-ab5f-4621-b685-14c9b75197ac"><img data-title="Summoner 01" data-media-type="Screenshot" data-filter-type="Screenshot" src="./summoner_files/carousel-thumb_summoner_01.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/summoner_04.jpg" data-clearing-id="9663ecce-d36e-4ae0-b81c-2ccf166a474a"><img data-title="Summoner 04" data-media-type="Screenshot" data-filter-type="Screenshot" src="./summoner_files/carousel-thumb_summoner_04.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/summoner_05.jpg" data-clearing-id="6e7bfbab-db17-48de-a846-cbd25d48511b"><img data-title="Summoner 05" data-media-type="Screenshot" data-filter-type="Screenshot" src="./summoner_files/carousel-thumb_summoner_05.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/summoner_06.jpg" data-clearing-id="1a4adf6a-b0b5-4b6c-b137-850cb1bddbad"><img data-title="Summoner 06" data-media-type="Screenshot" data-filter-type="Screenshot" src="./summoner_files/carousel-thumb_summoner_06.jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                <script>
+                  var _clearingLabels = {
+                    viewMore : "View More",
+                    close : "Close"
+                  };
+                </script>
+              </div>
+            </div>
+            <div class="xlarge-4 columns media class-media-detail wallpaper" data-category="wallpaper" data-tags="summoner">
+              <div class="skill-detail-gallery">
+                <h6 class="skills-header">Wallpaper</h6>
+                <div class="media-items large-collapse wallpaper-media-section">
+                  <!-- <div class="grid-sizer"></div> -->
+                <div class="media-item" data-clearing-id="bbfcb791-b4c3-4f60-b00b-0118150585eb" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Summoner 01</h3></div><!--  .media-label --></div><img src="./summoner_files/summoner_01_thumbnail_420x260.jpg" alt="Summoner 01"></div></div><div class="media-item" data-clearing-id="0d92819d-da29-41bb-8d9c-77c3e5bfbe61" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Summoner 04</h3></div><!--  .media-label --></div><img src="./summoner_files/summoner_04_thumbnail_420x260.jpg" alt="Summoner 04"></div></div><div class="media-item" data-clearing-id="601dfc93-ba1c-44f1-9c38-c4eda42a708b" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Summoner Moves Chart</h3></div><!--  .media-label --></div><img src="./summoner_files/summoner_moves_chart_thumbnail_420x260.jpg" alt="Summoner Moves Chart"></div></div><div class="media-item" data-clearing-id="bbbd04d5-ca2e-4755-8757-a257044bdbb2" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Summoner 03</h3></div><!--  .media-label --></div><img src="./summoner_files/summoner_03_thumbnail_420x260.jpg" alt="Summoner 03"></div></div><div class="media-item" data-clearing-id="3b18cca2-600f-4088-8bdc-f08d63412fda" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Summoner 02</h3></div><!--  .media-label --></div><img src="./summoner_files/summoner_02_thumbnail_420x260_cp0.jpg" alt="Summoner 02"></div></div></div>
+                <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/summoner/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/summoner/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/summoner/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/summoner/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/summoner_01_wide_2880x1800.jpg" data-clearing-id="bbfcb791-b4c3-4f60-b00b-0118150585eb"><img data-title="Summoner 01" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/summoner_01_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/summoner_01_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/summoner_01_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/summoner_01_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./summoner_files/summoner_01_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/summoner_04_wide_2880x1800.jpg" data-clearing-id="0d92819d-da29-41bb-8d9c-77c3e5bfbe61"><img data-title="Summoner 04" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/summoner_04_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/summoner_04_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/summoner_04_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/summoner_04_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./summoner_files/summoner_04_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/summoner_moves_chart_wide_2880x1800_en.jpg" data-clearing-id="601dfc93-ba1c-44f1-9c38-c4eda42a708b"><img data-title="Summoner Moves Chart" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/summoner_moves_chart_wide_2880x1800_en.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/summoner_moves_chart_standard_2048x1536_en.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/summoner_moves_chart_tablet_2048x2048_en.jpg" data-filter-type="Wallpaper" src="./summoner_files/summoner_moves_chart_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/summoner_03_wide_2880x1800.jpg" data-clearing-id="bbbd04d5-ca2e-4755-8757-a257044bdbb2"><img data-title="Summoner 03" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/summoner_03_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/summoner_03_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/summoner_03_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/summoner_03_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./summoner_files/summoner_03_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/summoner_02_wide_2880x1800.jpg" data-clearing-id="3b18cca2-600f-4088-8bdc-f08d63412fda"><img data-title="Summoner 02" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/summoner_02_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/summoner_02_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/summoner_02_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/summoner_02_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./summoner_files/summoner_02_carousel_160x100.jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                <script>
+                  var _clearingLabels = {
+                    viewMore : "View More",
+                    close : "Close"
+                  };
+                </script>
+              </div>
+            </div>
+          </div><!-- 12 col -->
+        </div><!--  .row -->
+      
+  </div>
+</div><!--  .class-section -->
+
+</div>
+
+
+<!-- added footer-freetoplay.html for freetoplay page ONLY -->
+<div id="footer-playfreenow">
+<div class="row">
+<div class="columns">
+<div class="copy">
+<a href="/downloads.html" class="playfreenow icon">
+<span class="large">Play Free Now</span>
+</a>
+<a href="/downloads.html" class="downloadnow icon">
+<span class="large">Download Now</span>
+</a>
+</div>
+</div>
+</div><!--  .row -->
+</div>
+
+<div id="footer">
+<div class="top">
+<div class="row footer-links">
+<div class="small-12 columns footer-link-column-left sns-only-footer-links">
+<div class="small-12 small-centered columns column-sns">
+<h4>Follow Us</h4>
+<ul class="footer-list">
+<li>
+<a href="#" target="_blank"><i class="fa fa-facebook sns-footer"></i> Facebook</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitter sns-footer"></i> Twitter</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitch sns-footer"></i> Twitch</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-instagram sns-footer"></i> Instagram</a>
+</li>
+</ul>
+</div>
+</div>
+
+</div><!-- .row -->
+<div class="row logo">
+<div class="columns bns-logo">
+<a href="#"><img src="img/global/footer-bns-logo.png" alt="Blade &amp; Soul"></a>
+</div>
+</div>
+<div class="row legal">
+<div class="columns desktop copyright">
+<div class="copy">
+<p>©2019 NCSOFT Corporation. All rights reserved. All trademarks are the property of their respective owners.</p>
+</div><!--  .copy -->
+<a href="#" target="_blank" class="gamerating-logo gamerating-en gamerating-ESRB">
+<img src="img/global/BnS_ESRB_RatedM.png" alt="ESRB" class="rating">
+</a>
+</div>
+</div><!-- .row -->
+
+</div><!--  .top -->
+</div><!-- #footer  -->
+
+
+<script src="js/main.js"></script>
+<script src="js/components-20210127.js"></script>
+<script src="/js/menu.js"></script>
+</body>
+
+</html>

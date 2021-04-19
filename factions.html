@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blade &amp; Soul Rebellion - Factions</title>
+<link rel="shortcut icon" href="http://static.bladeandsoul.com/img/global/favicon.ico" />
+<meta name="description" content="Begin a heroic journey to confront dark forces and seek vengeance as a master of the martial arts in Blade & Soul, the free-to-play MMORPG." />
+<link rel="stylesheet" href="css/all.min.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="bakaexpert/fonts.css" type="text/css" />
+<link rel="stylesheet" href="css/vendor.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/navigation.css" />
+</head>
+<body data-lang="en" id="game-factions-page">
+<script src="js/vendor.js"></script>
+
+<div class="age-gate-overlay age-gate">
+<div class="content-wrapper">
+<div class="row age-gate-content">
+<div class="columns">
+<div class="input-container">
+<div class="row">
+<div class="columns bns-age-gate-logo">
+<img src="img/site_age_gate_logo.jpg" alt="Blade &amp; Soul" />
+</div>
+</div>
+<form>
+<div class="row instructions">
+<p>Enter Your Date of Birth</p>
+</div>
+<div class="row agegate-container">
+<div class="columns small-centered input-container">
+<div class="row">
+<div class="columns small-3">
+<input class="agegate-field agegate-month" pattern="\d*" type="text" maxlength="2" name="dob[mm]" placeholder="MM" />
+</div>
+<!--<div class="columns small-3 day-column" style="display: none !important;">
+<input class="agegate-field agegate-day" pattern="\d*" type="text" maxlength="2" name="dob[dd]" placeholder="DD" value="1">
+</div>-->
+<div class="columns small-3 end">
+<input class="agegate-field agegate-year" pattern="\d*" maxlength="4" type="text" name="dob[yy]" placeholder="YYYY" />
+</div>
+</div>
+</div>
+</div>
+<div class="age-gate-msg"></div>
+<button disabled id="age-gate-submit-btn" type="submit" form="" value=""><span>Submit</span></button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="js/agegate.js"></script>
+<script>
+/**
+* AgeGate
+*/
+var isLandingPage = $("body").hasClass("freetoplay-landing-page");
+
+runAgegate(isLandingPage);
+</script>
+
+<div id="new-main-nav-app" class="contain-to-grid"></div>
+<div data-reactroot="" id="new-main-nav" onclick="toggleMenu()" style="top: 0px; position: fixed;">
+<div class="menu-btn">
+<div class="menu-icon"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="menu-contain">
+<a class="logo-link" href="#">
+<img class="logo" src="img/nav-bs-logo.png" />
+</a>
+<ul>
+
+<li class=""><a class="navlink" href="#">Home</a></li>
+<li class=""><a class="navlink" href="/about.html">About Game</a></li>
+<li class=""><a class="navlink" href="/races.html">Races</a></li>
+<li class="active"><a class="navlink" href="/factions.html">Factions</a></li>
+<li class=""><a class="navlink" href="/classes.html">Classes</a></li>
+<li class=""><a class="navlink" href="https://discord.gg/eqUyReD" target="_blank">Community</a></li>
+<li class=""><a class="navlink" href="/downloads.html">Download</a></li>
+
+</ul>
+
+<a class="play-free-btn logged-out" href="/register.html"><div class="play-free-btn-inner">REGISTER FREE NOW</div></a>
+</div>
+</div>
+
+
+<div id="factions-wrapper">
+<div id="cerulean" class="faction">
+<div class="close"></div>
+<div class="expand">
+<span>The Crimson Legion</span>
+</div>
+<div class="hero-image"><img class="hero" src="img/game/factions/factions_blue_character.png" /></div>
+<div class="emblem">
+<img class="hero-icon" src="img/game/factions/factions_blue_emblem.png" />
+<h2>The Cerulean Order</h2>
+</div>
+<div class="faction-content">
+<div class="quote">
+<img class="hero-icon" src="img/game/factions/factions_blue_emblem.png" />
+<h2>The Cerulean Order</h2>
+<blockquote>“So you wish to help society reach its full potential? Then surely you must appreciate the value of order, unity, and dignity.” <span>– Cerulean Elder Hansu</span></blockquote>
+</div>
+<p>
+You’ve made a wise choice in seeking out the Cerulean Order. Ours is a refined militant faction that has focuses on the future and the well-being of the realm. We are a group of noble warriors, different from other
+inferior groups, and it is our obligation to punish the evil forces and bring peace to the world. The war between the Stratus and Talus has thrown the world into disarray. Governments are corrupt from their core.
+It’s only natural that we seek to remove those broken facets of the system and replace them with a new order, unified and diligent in its desire to improve the lives of the people.
+</p>
+<p>
+Unlike the anarchistic Crimson Legion, the Cerulean Order focuses on strength in a shared vision of a better tomorrow. We maintain ourselves with a careful system of checks and balances to ensure we do not fall prey
+to the same corruption that plagued our predecessors. Those deluded Crimson Legion believe society can survive without structure and control, but they are lying to themselves. It is in our very nature to form bonds
+with one another and work together. You have heard the rallying call to action, so rise to that noble cause and fight with us! Together we can rid the world of its faults and usher in a new age of prosperity for all.
+</p>
+</div>
+<div class="fade"></div>
+</div>
+<div id="crimson" class="faction">
+<div class="close"></div>
+<div class="expand">
+<span>The Cerulean Order</span>
+</div>
+<div class="hero-image"><img class="hero" src="img/game/factions/factions_red_character.png" /></div>
+<div class="emblem">
+<img class="hero-icon" src="img/game/factions/factions_red_emblem.png" />
+<h2>The Crimson Legion</h2>
+</div>
+<div class="faction-content">
+<div class="quote">
+<img class="hero-icon" src="img/game/factions/factions_red_emblem.png" />
+<h2>The Crimson Legion</h2>
+<blockquote>
+“All living beings are born free! Time and again we’ve seen established governments turn corrupt without hesitation, so why should we bow to those who only serve themselves?” <span>– Crimson Chief Sansu</span>
+</blockquote>
+</div>
+<p>
+We’ve all been stepped on, kicked around, and mistreated by those who hold unjust power over the populace. Surely you’re as sick of it as the rest of us! The Crimson Legion believes in freedom above all else: freedom
+to make our own place in the world and freedom to rise against those who would enforce their will on the masses. We’ve all seen the way these overgrown organizations tread all over the common folk. It is the
+obligation of a government to protect its people and, if it fails in that regard, the people must make a stand for their own rights.
+</p>
+<p>
+The Cerulean Order is just another stuffy, self-important organization waiting to replace the current bunch. Mark my words: it’ll repeat the same mistakes as the rest! It’s just the nature of those groups trying to
+force others to bend to their idea of how things should be. The Crimson Legion eschews outdated traditions – we’ll carve a new path for ourselves, leading the way into a future without some oppressive hierarchy
+dictating our lives. Our passion and drive can’t be resisted! So take up your sword and join us! Together we’ll break the chains of the past and show the world that the human spirit can’t be locked into servitude!
+</p>
+</div>
+<div class="fade"></div>
+</div>
+<div class="table-container">
+<div class="table-cell">
+<div id="content">
+<h1>The Warring Factions</h1>
+<p>
+As a rising Martial Artist, you will be asked to join one of the elite Factions&#58; they share a goal of eliminating evil, but differ in their views on how the realm shall operate. Choose wisely! Who you align
+with will determine the Clans you can join.
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- added footer-freetoplay.html for freetoplay page ONLY -->
+<div id="footer-playfreenow">
+<div class="row">
+<div class="columns">
+<div class="copy">
+<a href="/downloads.html" class="playfreenow icon">
+<span class="large">Play Free Now</span>
+</a>
+<a href="/downloads.html" class="downloadnow icon">
+<span class="large">Download Now</span>
+</a>
+</div>
+<!--  .copy -->
+</div>
+</div>
+<!--  .row -->
+</div>
+
+<div id="footer">
+<div class="top">
+<div class="row footer-links">
+<div class="small-12 columns footer-link-column-left sns-only-footer-links">
+<div class="small-12 small-centered columns column-sns">
+<h4>Follow Us</h4>
+<ul class="footer-list">
+<li>
+<a href="#" target="_blank"><i class="fa fa-facebook sns-footer"></i> Facebook</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitter sns-footer"></i> Twitter</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitch sns-footer"></i> Twitch</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-instagram sns-footer"></i> Instagram</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- .row -->
+<div class="row logo">
+<div class="columns bns-logo">
+<a href="#"><img src="img/global/footer-bns-logo.png" alt="Blade &amp; Soul" /></a>
+</div>
+</div>
+<div class="row legal">
+<div class="columns desktop copyright">
+<div class="copy">
+<p>©2019 NCSOFT Corporation. All rights reserved. All trademarks are the property of their respective owners.</p>
+</div>
+<!--  .copy -->
+<a href="#" target="_blank" class="gamerating-logo gamerating-en gamerating-ESRB">
+<img src="img/global/BnS_ESRB_RatedM.png" alt="ESRB" class="rating" />
+</a>
+</div>
+</div>
+<!-- .row -->
+</div>
+<!--  .top -->
+</div>
+<script src="js/main.js"></script>
+<script src="js/components-20210127.js"></script>
+<script src="/js/menu.js"></script>
+</body>
+</html>

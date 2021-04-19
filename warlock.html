@@ -1,0 +1,532 @@
+﻿
+<!DOCTYPE html>
+<html class="no-js"> 
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Blade &amp; Soul</title>
+<link rel="shortcut icon" href="img/global/favicon.ico">
+<meta name="description" content="Begin a heroic journey to confront dark forces and seek vengeance as a master of the martial arts in Blade & Soul, the free-to-play MMORPG."/>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="bakaexpert/fonts.css" type="text/css" />
+<link rel="stylesheet" href="css/vendor.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/navigation.css">
+
+</head>
+<body data-lang="en" id="game-classes-detail-page-blade-master" class="classes-detail-page full-content-class multiGallery" data-media-tags="blade-master">
+
+<script src="js/vendor.js"></script>
+
+<div class="age-gate-overlay age-gate">
+<div class="content-wrapper">
+<div class="row age-gate-content">
+<div class="columns">
+<div class="input-container">
+<div class="row">
+<div class="columns bns-age-gate-logo">
+<img src="img/global/site_age_gate_logo.jpg" alt="Blade &amp; Soul" />
+</div>
+</div>
+<form>
+<div class="row instructions">
+<p>Enter Your Date of Birth</p>
+</div>
+<div class="row agegate-container">
+<div class="columns small-centered input-container">
+<div class="row">
+<div class="columns small-3">
+<input class="agegate-field agegate-month" pattern="\d*" type="text" maxlength="2" name="dob[mm]" placeholder="MM">
+</div>
+<!--<div class="columns small-3 day-column" style="display: none !important;">
+<input class="agegate-field agegate-day" pattern="\d*" type="text" maxlength="2" name="dob[dd]" placeholder="DD" value="1">
+</div>-->
+<div class="columns small-3 end">
+<input class="agegate-field agegate-year" pattern="\d*" maxlength="4" type="text" name="dob[yy]" placeholder="YYYY">
+</div>
+</div>
+</div>
+</div>
+<div class="age-gate-msg"></div>
+<button disabled id="age-gate-submit-btn" type="submit" form="" value=""><span>Submit</span></button>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="js/agegate.js" ></script>
+<script>
+
+/**
+* AgeGate
+*/
+var isLandingPage = $('body').hasClass('freetoplay-landing-page');
+
+runAgegate(isLandingPage);
+
+</script>
+
+</script>
+
+
+
+<!-- Holds navigation bat react component -->
+<!-- <script src="/js/navigation.js"></script> -->
+
+<div id="new-main-nav-app" class="contain-to-grid"></div>
+<div data-reactroot="" id="new-main-nav" onclick="toggleMenu()" style="top: 0px; position: fixed;">
+<div class="menu-btn">
+<div class="menu-icon"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="menu-contain">
+<a class="logo-link" href="#">
+<img class="logo" src="img/nav-bs-logo.png" />
+</a>
+<ul>
+
+<li class=""><a class="navlink" href="#">Home</a></li>
+<li class=""><a class="navlink" href="/about.html">About Game</a></li>
+<li class=""><a class="navlink" href="/races.html">Races</a></li>
+<li class=""><a class="navlink" href="/factions.html">Factions</a></li>
+<li class="active"><a class="navlink" href="/classes.html">Classes</a></li>
+<li class=""><a class="navlink" href="/register.html">Register</a></li>
+<li class=""><a class="navlink" href="/downloads.html">Downloads</a></li>
+
+</ul>
+<a class="play-free-btn logged-out" href="/downloads.html"><div class="play-free-btn-inner">PLAY FREE NOW</div></a>
+</div>
+</div>
+
+<div class="character-classes-details show-for-large-up">
+<div id="section-warlock" class="class-section warlock">
+<div class="class-container">
+
+<div class="row">
+<div class="medium-6 columns class-detail">
+<div class="custom-dropdown">
+<div class="default-text"></div>
+<i class="fa fa-angle-down"></i>
+<div class="items-list">
+
+<a class="item" href="/blade-master.html">
+Blade Master
+</a>
+<a class="item " href="/destroyer.html">
+Destroyer
+</a>
+<a class="item " href="/summoner.html">
+Summoner
+</a>
+<a class="item " href="/forcemaster.html">
+Force Master
+</a>
+<a class="item " href="/kung-fu-master.html">
+Kung Fu Master
+</a>
+<a class="item " href="/assassin.html">
+Assassin
+</a>
+<a class="item " href="/blade-dancer.html">
+Blade Dancer
+</a>
+<a class="item active-item" href="/warlock.html">
+Warlock
+</a>
+<a class="item " href="/soul-fighter.html">
+Soul Fighter
+</a>
+</div>
+</div>
+
+<!--<div class="custom-dropdown">-->
+<!--<div class="default-text">blademaster</div>-->
+<!--<i class="fa fa-caret-down"></i>-->
+<!--<div class="items-list">-->
+<!---->
+<!--</div>-->
+<!--</div>-->
+
+
+<div class="classes-nav">
+<div class="inner-classes-nav">
+<div class="row">
+<div id="0" class="small-1 columns">
+<a href="/blade-master.html" class="class-icon blademaster">
+<span>Blade Master</span>
+</a>
+</div>
+<div id="1" class="small-1 columns ">
+<a href="/destroyer.html" class="class-icon destroyer">
+<span>Destroyer</span>
+</a>
+</div>
+<div id="2" class="small-1 columns">
+<a href="/summoner.html" class="class-icon summoner">
+<span>Summoner</span>
+</a>
+</div>
+<div id="3" class="small-1 columns ">
+<a href="/force-master.html" class="class-icon forcemaster">
+<span>Force Master</span>
+</a>
+</div>
+<div id="4" class="small-1 columns ">
+<a href="/kung-fu-master.html" class="class-icon kungfumaster">
+<span>Kung Fu Master</span>
+</a>
+</div>
+<div id="5" class="small-1 columns ">
+<a href="/assassin.html" class="class-icon assassin">
+<span>Assassin</span>
+</a>
+</div>
+<div id="6" class="small-1 columns ">
+<a href="/blade-dancer.html" class="class-icon bladedancer">
+<span>Blade Dancer</span>
+</a>
+</div>
+<div id="7" class="small-1 columns active">
+<a href="/warlock.html" class="class-icon warlock">
+<span>Warlock</span>
+</a>
+</div>
+<div id="8" class="small-1 columns ">
+<a href="/soul-fighter.html" class="class-icon soulfighter">
+<span>Soul Fighter</span>
+</a>
+</div>
+
+</div><!-- .row -->
+</div>
+</div>
+            <h2>Warlock</h2>
+            <div class="class-video-loop">
+              <div class="detail-video-button">
+                <video autoplay="" loop="" muted="" id="bgvid" poster="/video/classes/warlock/warlock_fallback_video_thumb.png">
+                  <source src="/video/classes/warlock/warlock_button_loop.ogv" type="video/ogv">
+                  <source src="/video/classes/warlock/warlock_button_loop.webm" type="video/webm">
+                  <source src="/video/classes/warlock/warlock_button_loop.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div id="video-warlock" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                <div class="responsive-video-container">
+                  <iframe id="fullVideo" width="560" height="315" src="./warlock_files/HcU5TOdxEvQ.html" frameborder="0" allowfullscreen="" data-gtm-yt="true" data-gtm-yt-inspected-1_25="true" data-gtm-yt-inspected-8849921_34="true" data-gtm-yt-inspected-1_27="true"></iframe>
+                </div>
+                <a class="close-reveal-modal" aria-label="Close">×</a>
+              </div>
+            </div>
+            <p class="difficulty normal"><span class="difficulty-label">Difficulty:</span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> <span class="difficulty-level">Normal</span></p>
+            <div class="description"><p>Harnessing dark magics, the Warlock is a medium-ranged caster that relies on empowered Talismans—floating supernatural writings that can be consumed or unleashed to great effect—to protect or attack. Through their Talismans they primarily focus on summoning visceral and nefarious restraints and weapons, like spikes and chains.</p><p>While the Warlock can be considered a glass cannon, they have a number of ways to keep their enemies at bay, not the least of which is their ability to summon a giant demonic Thrall to finish off their enemies. By keeping enemies at a distance, marking them with limited-time debuffs, and mastering their lengthy ability cooldowns, a Warlock can be a difficult—but rewarding—martial art to master.</p><p>Their flamboyant attitude is matched only by their deadly cunning, but catch a Warlock off guard and their cocky expression could be wiped from their face; just keep an eye out for the giant demon.</p></div>
+
+            <p class="available-races">Available Races: <a href="/races.html#races-jin">Jin</a>, <a href="/races.html#races-lyn">Lyn</a></p>
+          </div>
+        </div><!--  .row -->
+        <div class="row">
+          <div class="medium-12 columns class-media">
+            <div class="xlarge-4 columns class-media-detail">
+              <div class="move-chart">
+                <a href="/img/game/classes/moves_chart/warlock/warlock_moves_chart_en.pdf" target="_new">
+                  <h6 class="skills-header">Warlock Move Chart</h6>
+                </a>
+                <div class="move-chart-wrap">
+                  <a href="/img/game/classes/moves_chart/warlock/warlock_moves_chart_en.pdf" target="_new">
+                    <img class="move-chart-thumb" src="./warlock_files/moves_chart_thumb.jpg">
+                    <div class="media-label">
+                      <div class="media-label-content">
+                        <p class="type">Move Chart</p>
+                        <h3>Warlock</h3>
+                        <div class="media-download"></div>
+                      </div><!--  .media-label -->
+                    </div>
+                  </a>
+                </div>
+              </div><!--.move-chart-->
+              <div class="skill-details">
+                <h6 class="skills-header">Notable Skills</h6>
+                <ul class="skills-list">
+                  <li class="class-skill dragon-call">
+                    <div class="icon-container"><img src="./warlock_files/icon_skill_warlock_dragoncall.png"></div>
+                    <span>Dragon Call</span>
+                  </li>
+                  <li class="class-skill incantation">
+                    <div class="icon-container"><img src="./warlock_files/icon_skill_warlock_incantation.png"></div>
+                    <span>Incantation</span>
+                  </li>
+                  <li class="class-skill quell">
+                    <div class="icon-container"><img src="./warlock_files/icon_skill_warlock_quell.png"></div>
+                    <span>Quell</span>
+                  </li>
+                  <li class="class-skill summon">
+                    <div class="icon-container"><img src="./warlock_files/icon_skill_warlock_summon.png"></div>
+                    <span>Summon</span>
+                  </li>
+                </ul>
+              </div>
+            </div><!--4 col-->
+            <div class="xlarge-4 columns media class-media-detail screenshots" data-category="screenshots" data-tags="warlock">
+              <div class="skill-detail-gallery">
+                <h6 class="skills-header">Screenshots</h6>
+                <div class="media-items large-collapse screenshots-media-section">
+                  <!-- <div class="grid-sizer"></div> -->
+                <div class="media-item" data-clearing-id="5391c6d3-8462-4b30-9efa-c4b8fb5102da" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 01</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_01.jpg" alt="Warlock 01"></div></div><div class="media-item" data-clearing-id="bcb00d43-4087-4fca-b29c-c06873e7356c" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 02</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_02.jpg" alt="Warlock 02"></div></div><div class="media-item" data-clearing-id="b3364b90-e0fd-409a-af07-1a1b3d40dacf" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 03</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_03.jpg" alt="Warlock 03"></div></div><div class="media-item" data-clearing-id="b3b5b6cc-dc62-4919-a18e-63b6cdc7b817" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 04</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_04.jpg" alt="Warlock 04"></div></div><div class="media-item" data-clearing-id="8a9332f0-1b0c-4003-9832-6928fa7e93ab" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 05</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_05.jpg" alt="Warlock 05"></div></div><div class="media-item" data-clearing-id="1bbd701d-99e3-4ea2-8878-d91bdd037590" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 06</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_06.jpg" alt="Warlock 06"></div></div><div class="media-item" data-clearing-id="88856dab-4433-4ca2-9136-c0c97320a65a" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 07</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_07.jpg" alt="Warlock 07"></div></div></div>
+                <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_01.jpg" data-clearing-id="5391c6d3-8462-4b30-9efa-c4b8fb5102da"><img data-title="Warlock 01" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_01(1).jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_02.jpg" data-clearing-id="bcb00d43-4087-4fca-b29c-c06873e7356c"><img data-title="Warlock 02" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_02(1).jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_03.jpg" data-clearing-id="b3364b90-e0fd-409a-af07-1a1b3d40dacf"><img data-title="Warlock 03" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_03(1).jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_04.jpg" data-clearing-id="b3b5b6cc-dc62-4919-a18e-63b6cdc7b817"><img data-title="Warlock 04" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_04(1).jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_05.jpg" data-clearing-id="8a9332f0-1b0c-4003-9832-6928fa7e93ab"><img data-title="Warlock 05" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_05(1).jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_06.jpg" data-clearing-id="1bbd701d-99e3-4ea2-8878-d91bdd037590"><img data-title="Warlock 06" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_06(1).jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_07.jpg" data-clearing-id="88856dab-4433-4ca2-9136-c0c97320a65a"><img data-title="Warlock 07" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_07(1).jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                <script>
+                  var _clearingLabels = {
+                    viewMore : "View More",
+                    close : "Close"
+                  };
+                </script>
+              </div>
+            </div>
+            <div class="xlarge-4 columns media class-media-detail wallpaper" data-category="wallpaper" data-tags="warlock">
+              <div class="skill-detail-gallery">
+                <h6 class="skills-header">Wallpaper</h6>
+                <div class="media-items large-collapse wallpaper-media-section">
+                  <!-- <div class="grid-sizer"></div> -->
+                <div class="media-item" data-clearing-id="e9812d73-13f3-4245-ad10-276893bb2245" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Warlock Moves Chart</h3></div><!--  .media-label --></div><img src="./warlock_files/Warlock_moves_chart_thumbnail_420x260.jpg" alt="Warlock Moves Chart"></div></div><div class="media-item" data-clearing-id="1060e2fd-f07d-421e-ba01-74c089a4be66" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Warlock 03</h3></div><!--  .media-label --></div><img src="./warlock_files/Warlock_03_thumbnail_420x260.jpg" alt="Warlock 03"></div></div><div class="media-item" data-clearing-id="3086262c-c48c-4d69-a23f-ce66e59ab4f9" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Warlock 02</h3></div><!--  .media-label --></div><img src="./warlock_files/Warlock_02_thumbnail_420x260.jpg" alt="Warlock 02"></div></div><div class="media-item" data-clearing-id="7f8f175d-94fb-4147-b2b8-07265de8b085" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Warlock 01</h3></div><!--  .media-label --></div><img src="./warlock_files/Warlock_01_thumbnail_420x260.jpg" alt="Warlock 01"></div></div></div>
+                <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_moves_chart_wide_2880x1800_EN.jpg" data-clearing-id="e9812d73-13f3-4245-ad10-276893bb2245"><img data-title="Warlock Moves Chart" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_moves_chart_wide_2880x1800_EN.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/Warlock_moves_chart_standard_2048x1536_EN.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/Warlock_moves_chart_tablet_2048x2048_EN.jpg" data-filter-type="Wallpaper" src="./warlock_files/Warlock_moves_chart_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_03_wide_2880x1800.jpg" data-clearing-id="1060e2fd-f07d-421e-ba01-74c089a4be66"><img data-title="Warlock 03" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_03_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/Warlock_03_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/Warlock_03_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/Warlock_03_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./warlock_files/Warlock_03_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_02_wide_2880x1800.jpg" data-clearing-id="3086262c-c48c-4d69-a23f-ce66e59ab4f9"><img data-title="Warlock 02" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_02_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/Warlock_02_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/Warlock_02_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/Warlock_02_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./warlock_files/Warlock_02_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_01_wide_2880x1800.jpg" data-clearing-id="7f8f175d-94fb-4147-b2b8-07265de8b085"><img data-title="Warlock 01" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_01_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/Warlock_01_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/Warlock_01_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/Warlock_01_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./warlock_files/Warlock_01_carousel_160x100.jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                <script>
+                  var _clearingLabels = {
+                    viewMore : "View More",
+                    close : "Close"
+                  };
+                </script>
+              </div>
+            </div>
+          </div>
+        </div><!--  .row -->
+      
+  </div>
+</div><!--  .class-section -->
+
+</div>
+
+<div class="character-classes-details hide-for-large-up">
+    <div id="section-mobile-warlock" class="class-mobile-section warlock">
+      
+            <div class="custom-dropdown">
+  <div class="default-text">
+      Warlock
+      </div>
+  <i class="fa fa-angle-down"></i>
+  <div class="items-list">
+
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/blade-master">
+      Blade Master
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/destroyer">
+      Destroyer
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/summoner">
+      Summoner
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/force-master">
+      Force Master
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/kung-fu-master">
+      Kung Fu Master
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/assassin">
+      Assassin
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/blade-dancer">
+      Blade Dancer
+      </a>
+      <a class="item active-item" href="https://www.bladeandsoul.com/en/game/classes/warlock">
+      Warlock
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/soul-fighter">
+      Soul Fighter
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/gunslinger">
+      Gunslinger
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/warden">
+      Warden
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/zen-archer">
+        Zen Archer
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/astromancer">
+        Astromancer
+      </a>
+  </div>
+</div>
+
+<!--<div class="custom-dropdown">-->
+  <!--<div class="default-text">warlock</div>-->
+  <!--<i class="fa fa-caret-down"></i>-->
+  <!--<div class="items-list">-->
+    <!---->
+  <!--</div>-->
+<!--</div>-->
+
+
+          <div class="row">
+            <div class="columns copy">
+              <div class="class-info">
+                <h2>Warlock</h2>
+                <p class="difficulty normal"><span class="difficulty-label">Difficulty:</span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> <span class="difficulty-level">Normal</span></p>
+                <div class="description"><p>Harnessing dark magics, the Warlock is a medium-ranged caster that relies on empowered Talismans—floating supernatural writings that can be consumed or unleashed to great effect—to protect or attack. Through their Talismans they primarily focus on summoning visceral and nefarious restraints and weapons, like spikes and chains.</p><p>While the Warlock can be considered a glass cannon, they have a number of ways to keep their enemies at bay, not the least of which is their ability to summon a giant demonic Thrall to finish off their enemies. By keeping enemies at a distance, marking them with limited-time debuffs, and mastering their lengthy ability cooldowns, a Warlock can be a difficult—but rewarding—martial art to master.</p><p>Their flamboyant attitude is matched only by their deadly cunning, but catch a Warlock off guard and their cocky expression could be wiped from their face; just keep an eye out for the giant demon.</p></div>
+
+                <div class="available-races-section">
+                  <span class="available-races">Available Races: </span>
+                  <span class="classes"><a href="/races.html#races-jin">Jin</a>, <a href="/races.html#races-lyn">Lyn</a></span>
+                </div>
+              </div>
+              <div class="move-chart">
+                <a href="/img/game/classes/moves_chart/warlock/warlock_moves_chart_en.pdf" target="_new"><h6 class="skills-header">Warlock Move Chart</h6></a>
+                <a href="/img/game/classes/moves_chart/warlock/warlock_moves_chart_en.pdf" target="_new"><img class="move-chart-thumb" src="./warlock_files/moves_chart_thumb.jpg"></a>
+              </div><!--.move-chart-->
+              <div class="skill-details">
+                <h6 class="skills-header">Notable Skills</h6>
+                <div class="skill-list-container">
+                  <div class="skills-list row small-collapse">
+                    <div class="columns small-6 class-skill class-skill-dragon-call">
+                      <div class="icon-container"><img src="./warlock_files/icon_skill_warlock_dragoncall.png"></div>
+                      <div class="text-container">
+                        <div class="skill-label">Dragon Call</div>
+                        &nbsp;
+                      </div>
+                    </div>
+                    <div class="columns small-6 class-skill class-skill-incantation">
+                      <div class="icon-container"><img src="./warlock_files/icon_skill_warlock_incantation.png"></div>
+                      <div class="text-container">
+                        <div class="skill-label">Incantation</div>
+                        &nbsp;
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills-list row small-collapse">
+                    <div class="columns small-6 class-skill class-skill-quell">
+                      <div class="icon-container"><img src="./warlock_files/icon_skill_warlock_quell.png"></div>
+                      <div class="text-container">
+                        <div class="skill-label">Quell</div>
+                        &nbsp;
+                      </div>
+                    </div>
+                    <div class="columns small-6 class-skill class-skill-summon">
+                      <div class="icon-container"><img src="./warlock_files/icon_skill_warlock_summon.png"></div>
+                      <div class="text-container">
+                        <div class="skill-label">Summon</div>
+                        &nbsp;
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media class-media-detail screenshots-mobile" data-category="screenshots" data-tags="warlock">
+                    <div class="skill-details">
+                      <h6 class="skills-header">Screenshots</h6>
+                      <div class="media-items medium-collapse screenshots-mobile-media-section">
+                        <div class="grid-sizer"></div>
+                      <div class="media-item" data-clearing-id="5391c6d3-8462-4b30-9efa-c4b8fb5102damobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 01</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_01.jpg" alt="Warlock 01"></div></div><div class="media-item" data-clearing-id="bcb00d43-4087-4fca-b29c-c06873e7356cmobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 02</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_02.jpg" alt="Warlock 02"></div></div><div class="media-item" data-clearing-id="b3364b90-e0fd-409a-af07-1a1b3d40dacfmobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 03</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_03.jpg" alt="Warlock 03"></div></div><div class="media-item" data-clearing-id="b3b5b6cc-dc62-4919-a18e-63b6cdc7b817mobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 04</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_04.jpg" alt="Warlock 04"></div></div><div class="media-item" data-clearing-id="8a9332f0-1b0c-4003-9832-6928fa7e93abmobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 05</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_05.jpg" alt="Warlock 05"></div></div><div class="media-item" data-clearing-id="1bbd701d-99e3-4ea2-8878-d91bdd037590mobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 06</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_06.jpg" alt="Warlock 06"></div></div><div class="media-item" data-clearing-id="88856dab-4433-4ca2-9136-c0c97320a65amobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Warlock 07</h3></div><!--  .media-label --></div><img src="./warlock_files/warlock_07.jpg" alt="Warlock 07"></div></div></div>
+                      <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_01.jpg" data-clearing-id="5391c6d3-8462-4b30-9efa-c4b8fb5102damobile"><img data-title="Warlock 01" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_01(1).jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_02.jpg" data-clearing-id="bcb00d43-4087-4fca-b29c-c06873e7356cmobile"><img data-title="Warlock 02" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_02(1).jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_03.jpg" data-clearing-id="b3364b90-e0fd-409a-af07-1a1b3d40dacfmobile"><img data-title="Warlock 03" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_03(1).jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_04.jpg" data-clearing-id="b3b5b6cc-dc62-4919-a18e-63b6cdc7b817mobile"><img data-title="Warlock 04" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_04(1).jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_05.jpg" data-clearing-id="8a9332f0-1b0c-4003-9832-6928fa7e93abmobile"><img data-title="Warlock 05" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_05(1).jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_06.jpg" data-clearing-id="1bbd701d-99e3-4ea2-8878-d91bdd037590mobile"><img data-title="Warlock 06" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_06(1).jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/warlock_07.jpg" data-clearing-id="88856dab-4433-4ca2-9136-c0c97320a65amobile"><img data-title="Warlock 07" data-media-type="Screenshot" data-filter-type="Screenshot" src="./warlock_files/warlock_07(1).jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                      <script>
+                        var _clearingLabels = {
+                          viewMore : "View More",
+                          close : "Close"
+                        };
+                      </script>
+                    </div>
+                  </div>
+                  <div class="media class-media-detail wallpaper-mobile" data-category="wallpaper" data-tags="warlock">
+                    <div class="skill-details">
+                      <h6 class="skills-header">Wallpaper</h6>
+                      <div class="media-items medium-collapse wallpaper-mobile-media-section" style="position: relative; height: 0px;">
+                        <div class="grid-sizer"></div>
+                      <div class="media-item" data-clearing-id="e9812d73-13f3-4245-ad10-276893bb2245mobile" data-media-type="Wallpaper" data-filter-type="Wallpaper" style="position: absolute; opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 0.4s;"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Warlock Moves Chart</h3></div><!--  .media-label --></div><img src="./warlock_files/Warlock_moves_chart_thumbnail_420x260.jpg" alt="Warlock Moves Chart"></div></div><div class="media-item" data-clearing-id="1060e2fd-f07d-421e-ba01-74c089a4be66mobile" data-media-type="Wallpaper" data-filter-type="Wallpaper" style="position: absolute; opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 0.4s;"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Warlock 03</h3></div><!--  .media-label --></div><img src="./warlock_files/Warlock_03_thumbnail_420x260.jpg" alt="Warlock 03"></div></div><div class="media-item" data-clearing-id="3086262c-c48c-4d69-a23f-ce66e59ab4f9mobile" data-media-type="Wallpaper" data-filter-type="Wallpaper" style="position: absolute; opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 0.4s;"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Warlock 02</h3></div><!--  .media-label --></div><img src="./warlock_files/Warlock_02_thumbnail_420x260.jpg" alt="Warlock 02"></div></div><div class="media-item" data-clearing-id="7f8f175d-94fb-4147-b2b8-07265de8b085mobile" data-media-type="Wallpaper" data-filter-type="Wallpaper" style="position: absolute; opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 0.4s;"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Warlock 01</h3></div><!--  .media-label --></div><img src="./warlock_files/Warlock_01_thumbnail_420x260.jpg" alt="Warlock 01"></div></div></div>
+                      <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/warlock/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_moves_chart_wide_2880x1800_EN.jpg" data-clearing-id="e9812d73-13f3-4245-ad10-276893bb2245mobile"><img data-title="Warlock Moves Chart" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_moves_chart_wide_2880x1800_EN.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/Warlock_moves_chart_standard_2048x1536_EN.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/Warlock_moves_chart_tablet_2048x2048_EN.jpg" data-filter-type="Wallpaper" src="./warlock_files/Warlock_moves_chart_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_03_wide_2880x1800.jpg" data-clearing-id="1060e2fd-f07d-421e-ba01-74c089a4be66mobile"><img data-title="Warlock 03" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_03_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/Warlock_03_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/Warlock_03_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/Warlock_03_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./warlock_files/Warlock_03_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_02_wide_2880x1800.jpg" data-clearing-id="3086262c-c48c-4d69-a23f-ce66e59ab4f9mobile"><img data-title="Warlock 02" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_02_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/Warlock_02_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/Warlock_02_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/Warlock_02_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./warlock_files/Warlock_02_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_01_wide_2880x1800.jpg" data-clearing-id="7f8f175d-94fb-4147-b2b8-07265de8b085mobile"><img data-title="Warlock 01" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/Warlock_01_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/Warlock_01_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/Warlock_01_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/Warlock_01_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./warlock_files/Warlock_01_carousel_160x100.jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                      <script>
+                        var _clearingLabels = {
+                          viewMore : "View More",
+                          close : "Close"
+                        };
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+</div><!--  .class-section -->
+
+</div>
+
+
+<!-- added footer-freetoplay.html for freetoplay page ONLY -->
+<div id="footer-playfreenow">
+<div class="row">
+<div class="columns">
+<div class="copy">
+<a href="/downloads.html" class="playfreenow icon">
+<span class="large">Play Free Now</span>
+</a>
+<a href="/downloads.html" class="downloadnow icon">
+<span class="large">Download Now</span>
+</a>
+</div>
+</div>
+</div><!--  .row -->
+</div>
+
+<div id="footer">
+<div class="top">
+<div class="row footer-links">
+<div class="small-12 columns footer-link-column-left sns-only-footer-links">
+<div class="small-12 small-centered columns column-sns">
+<h4>Follow Us</h4>
+<ul class="footer-list">
+<li>
+<a href="#" target="_blank"><i class="fa fa-facebook sns-footer"></i> Facebook</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitter sns-footer"></i> Twitter</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitch sns-footer"></i> Twitch</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-instagram sns-footer"></i> Instagram</a>
+</li>
+</ul>
+</div>
+</div>
+
+</div><!-- .row -->
+<div class="row logo">
+<div class="columns bns-logo">
+<a href="#"><img src="img/global/footer-bns-logo.png" alt="Blade &amp; Soul"></a>
+</div>
+</div>
+<div class="row legal">
+<div class="columns desktop copyright">
+<div class="copy">
+<p>©2019 NCSOFT Corporation. All rights reserved. All trademarks are the property of their respective owners.</p>
+</div><!--  .copy -->
+<a href="#" target="_blank" class="gamerating-logo gamerating-en gamerating-ESRB">
+<img src="img/global/BnS_ESRB_RatedM.png" alt="ESRB" class="rating">
+</a>
+</div>
+</div><!-- .row -->
+
+</div><!--  .top -->
+</div><!-- #footer  -->
+
+
+<script src="js/main.js"></script>
+<script src="js/components-20210127.js"></script>
+<script src="/js/menu.js"></script>
+</body>
+
+</html>

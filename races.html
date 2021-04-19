@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html class="no-js"> 
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blade &amp; Soul Rebellion - Races</title>
+<link rel="shortcut icon" href="http://static.bladeandsoul.com/img/global/favicon.ico">
+<meta name="description" content="Begin a heroic journey to confront dark forces and seek vengeance as a master of the martial arts in Blade & Soul, the free-to-play MMORPG."/>
+
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="bakaexpert/fonts.css" type="text/css" />
+<link rel="stylesheet" href="css/vendor.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/navigation.css">
+</head>
+<body data-lang="en" id="game-races-page"  >
+<script src="js/vendor.js"></script>
+
+<div class="age-gate-overlay age-gate">
+<div class="content-wrapper">
+<div class="row age-gate-content">
+<div class="columns">
+<div class="input-container">
+<div class="row">
+<div class="columns bns-age-gate-logo">
+<img src="img/site_age_gate_logo.jpg" alt="Blade &amp; Soul" />
+</div>
+</div>
+<form>
+<div class="row instructions">
+<p>Enter Your Date of Birth</p>
+</div>
+<div class="row agegate-container">
+<div class="columns small-centered input-container">
+<div class="row">
+<div class="columns small-3">
+<input class="agegate-field agegate-month" pattern="\d*" type="text" maxlength="2" name="dob[mm]" placeholder="MM">
+</div>
+<!--<div class="columns small-3 day-column" style="display: none !important;">
+<input class="agegate-field agegate-day" pattern="\d*" type="text" maxlength="2" name="dob[dd]" placeholder="DD" value="1">
+</div>-->
+<div class="columns small-3 end">
+<input class="agegate-field agegate-year" pattern="\d*" maxlength="4" type="text" name="dob[yy]" placeholder="YYYY">
+</div>
+</div>
+</div>
+</div>
+<div class="age-gate-msg"></div>
+<button disabled id="age-gate-submit-btn" type="submit" form="" value=""><span>Submit</span></button>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="js/agegate.js" ></script>
+<script>
+
+/**
+* AgeGate
+*/
+var isLandingPage = $('body').hasClass('freetoplay-landing-page');
+
+runAgegate(isLandingPage);
+
+</script>
+
+
+
+<div id="new-main-nav-app" class="contain-to-grid"></div>
+<div data-reactroot="" id="new-main-nav" onclick="toggleMenu()" style="top: 0px; position: fixed;">
+<div class="menu-btn">
+<div class="menu-icon"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="menu-contain">
+<a class="logo-link" href="#">
+<img class="logo" src="img/nav-bs-logo.png" />
+</a>
+<ul>
+
+<li class=""><a class="navlink" href="#">Home</a></li>
+<li class=""><a class="navlink" href="/about.html">About Game</a></li>
+<li class="active"><a class="navlink" href="/races.html">Races</a></li>
+<li class=""><a class="navlink" href="/factions.html">Factions</a></li>
+<li class=""><a class="navlink" href="/classes.html">Classes</a></li>
+<li class=""><a class="navlink" href="https://discord.gg/eqUyReD" target="_blank">Community</a></li>
+<li class=""><a class="navlink" href="/downloads.html">Download</a></li>
+
+</ul>
+
+<a class="play-free-btn logged-out" href="/register.html"><div class="play-free-btn-inner">REGISTER FREE NOW</div></a>
+</div>
+</div>
+
+<div id="hero-banner" class="hero-banner">
+<div class="mobile-races row">
+<div class="columns">
+<div class="copy">
+<h1>Races</h1>
+<p>In the community of martial artists, there are four races: </br> the deliberate Gon, the mischevious Lyn, the elegant Yun, and the industrious Jin</p>
+</div><!-- .copy -->
+<a href="#races-gon"><div class="races-hero" id="gon-hero"></div></a>
+<a href="#races-lyn"><div class="races-hero" id="lyn-hero"></div></a>
+<a href="#races-yun"><div class="races-hero" id="yun-hero"></div></a>
+<a href="#races-jin"><div class="races-hero" id="jin-hero"></div></a>
+</div>
+</div> <!--.row -->
+<div class="desktop-races">
+<div class="copy">
+<h1>Races</h1>
+<p>In the community of martial artists, there are four races: </br> the deliberate Gon, the mischevious Lyn, the elegant Yun, and the industrious Jin</p>
+</div><!--  .copy -->
+<a href="#races-gon" id="hero-gon" class="hero">
+<img src="img/game/races/overview/race_expanded_top_01_gon.png">
+<img class="hover" src="img/game/races/overview/race_expanded_top_01_gon_hover.png">
+</a>
+<a href="#races-lyn" id="hero-lyn" class="hero">
+<img src="img/game/races/overview/race_expanded_top_02_lyn.png">
+<img class="hover" src="img/game/races/overview/race_expanded_top_02_lyn_hover.png">
+</a>
+<a href="#races-yun" id="hero-yun" class="hero">
+<img src="img/game/races/overview/race_expanded_top_03_yun.png">
+<img class="hover" src="img/game/races/overview/race_expanded_top_03_yun_hover.png">
+</a>
+<a href="#races-jin" id="hero-jin" class="hero">
+<img src="img/game/races/overview/race_expanded_top_04_jin.png">
+<img class="hover" src="img/game/races/overview/race_expanded_top_04_jin_hover.png">
+</a>
+</div><!-- .row -->
+<div class="races-nav">
+<div class="row">
+<ul>
+<li class="race-link gon"><a href="#races-gon">Gon</a></li>
+<li class="race-nav-seperator"></li>
+<li class="race-link lyn"><a href="#races-lyn">Lyn</a></li>
+<li class="race-nav-seperator"></li>
+<li class="race-link yun"><a href="#races-yun">Yun</a></li>
+<li class="race-nav-seperator"></li>
+<li class="race-link jin"><a href="#races-jin">Jin</a></li>
+</ul>
+</div><!-- .row -->
+</div><!--  .races-nav -->
+</div><!-- .hero-banner -->
+
+<div class="floating-nav">
+<div class="races-nav">
+<ul>
+<li class="race-link races-main"><a href="#hero-banner"><span class="animated fadeIn">Races Main</a></span></li>
+<li class="race-link gon"><a href="#races-gon"><span class="animated fadeIn">Gon</span></a></li>
+<li class="race-link lyn"><a href="#races-lyn"><span class="animated fadeIn">Lyn</span></a></li>
+<li class="race-link yun"><a href="#races-yun"><span class="animated fadeIn">Yun</span></a></li>
+<li class="race-link jin"><a href="#races-jin"><span class="animated fadeIn">Jin</span></a></li>
+</ul>
+</div><!--  .races-nav -->
+</div><!--  .floating-nav -->
+
+<div class="races-container">
+<div id="races-gon" class="race-section gon">
+<div class="row race-info">
+<div class="large-7 large-offset-5 columns">
+<div class="row">
+<div class="large-3 columns">
+<img src="img/game/races/overview/gon-logo.png" alt="Gon">
+</div>
+<div class="large-9 columns copy">
+<h2>Gon</h2>
+<p>The Gon believe that their ancestors were born from the breath of Dragons and they embrace this legend with pride.</p><p>Physical power and combative skill are treasured among the Gon. They seek to make themselves strong, capable, and able to overcome any challenge, and use their might for the good of others. This can make Gon somewhat easy to trick, as the greedy use the Gon's intimidating physique and trusting nature for personal gain. However, if you are true, friendships established with Gon are as strong as steel and you would have earned their loyalty for life.</p><p>In their day to day lives, Gon move and speak at a calm and measured pace. This deliberate pacing was started to help nullify the other Gon trait: their famously short tempers. With their massive frame and incredible strength, little can stand in the way of these mighty people once a Gon has been moved to anger.</p>
+<p>
+<span class="available">Available Classes:</span>
+<span class="classes">
+<a href="#">Destroyer</a>,
+<a href="#">Kung Fu Master</a>,
+<a href="#">Force Master</a>,
+<a href="#">Soul Fighter</a>,
+</span>
+</p>
+<ul class="male-female-selection inline-list">
+<li class="male active" id="select-gon-male">Male</li>
+<li class="female" id="select-gon-female">Female</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="character-container-large">
+<div class="character gon-character-female"></div>
+<div class="character gon-character-male"></div>
+</div>
+</div><!--  .row -->
+</div><!--  .section-gon -->
+
+<div id="races-lyn" class="race-section lyn">
+<div class="row race-info">
+<div class="large-7 large-offset-5 columns">
+<div class="row">
+<div class="large-3 columns">
+<img src="img/game/races/overview/lyn-logo.png" alt="Gon">
+</div>
+<div class="large-9 columns copy">
+<h2>Lyn</h2>
+<p>The Lyn, with their large ears and dainty tails, are descendants from the Kirin, legendary animals that were both mischievous and unpredictable</p><p>The Lyn have not survived in this dangerous world by mere chance; they have innately acute senses which steer them clear from danger and allow them to see treachery and deception where others cannot. More famously, the Lyn use these highly attuned senses to converse with beings from the Spirit Realm granting them the ability to commune with Familiars and harness the power of the earth.</p><p>The Lyn are known for their somewhat unpredictable nature. During a single conversation, it is not unusual for a Lyn to convey a multitude of emotions, including hatred, fear, jealousy, love, and respect.</p>
+<p>
+<span class="available">Available Classes:</span>
+<span class="classes">
+<a href="#">Summoner</a>,
+<a href="#">Force Master</a>,
+<a href="#">Blade Dancer</a>,
+<a href="#">Warlock</a>,
+</span>
+</p>
+<ul class="male-female-selection inline-list">
+<li class="male active" id="select-lyn-male">Male</li>
+<li class="female" id="select-lyn-female">Female</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="character-container-large">
+<div class="character lyn-character-male"></div>
+<div class="character lyn-character-female"></div>
+</div>
+</div><!--  .row -->
+</div><!--  .section-lyn -->
+
+<div id="races-yun" class="race-section yun">
+<div class="row race-info">
+<div class="large-7 large-offset-5 columns">
+<div class="row">
+<div class="large-3 columns">
+<img src="img/game/races/overview/yun-logo.png" alt="Gon">
+</div>
+<div class="large-9 columns copy">
+<h2>Yun</h2>
+<p>The Yun are a purely female race intrinsically entwined to the natural world. The planet serves as a guide for all Yun: they are heavily attuned to the rhythms of nature and dance to its tempo.</p><p>The Funghuang, a mythical Asian bird, has passed her traits of elegance and grace to her descendants. The Yun’s innate aesthetic skills make them some of the best artisans in all the realm. Other races look to them as the pinnacle of artistic skill and creativity, as the Yun weave beauty into everything they do. The Yun have become increasingly involved in modern society as they look to restore balance to the world.</p><p>Dignity is key to the Yun, and while they are able combatants, they balance their time spent fighting by teaching and meditating with others.</p>
+<p>
+<span class="available">Available Classes:</span>
+<span class="classes">
+<a href="#">Force Master</a>,
+<a href="#">Blade Master</a>,
+<a href="#">Kung Fu Master</a>,
+<a href="#">Soul Fighter</a>,
+</span>
+</p>
+<ul class="male-female-selection inline-list">
+<!--<li class="male">Male</li>-->
+<li class="female active">Female</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="character-container-large">
+<div class="character yun-character-female"></div>
+</div>
+</div><!--  .row -->
+</div><!--  .section-yun -->
+
+<div id="races-jin" class="race-section jin">
+<div class="row race-info">
+<div class="large-7 large-offset-5 columns">
+<div class="row">
+<div class="large-3 columns">
+<img src="img/game/races/overview/jin-logo.png" alt="Gon">
+</div>
+<div class="large-9 columns copy">
+<h2>Jin</h2>
+<p>The word "Jin" means "Unyielding Effort" in the ancient language of the eastern continent. It is this characteristic that still defines the Jin people, who make up most of the world's most celebrated people.</p><p>Jin warriors may look fairly ordinary, and are certainly smaller than their Gon counterparts, but beneath a somewhat plain exterior lays incredible strength and tenacity, typical of the heirs of the Black Tortoise. Their versatility and never-say-die attitude gives Jin warriors a reputation that few would risk testing in the battlefield.</p><p>Jin people are often friendly and considerate with a strong notion of right and wrong. Their warriors are often found traveling the continents, helping the needy by working selflessly wherever they were needed.</p>
+<p>
+<span class="available">Available Classes:</span>
+<span class="classes">
+<a href="#">Assassin</a>,
+<a href="#">Blade Master</a>,
+<a href="#">Kung Fu Master</a>,
+<a href="#">Warlock</a>,
+<a href="#">Soul Fighter</a>,
+</span>
+</p>
+<ul class="male-female-selection inline-list">
+<li class="male active" id="select-jin-male">Male</li>
+<li class="female" id="select-jin-female">Female</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="character-container-large">
+<div class="character jin-character-male"></div>
+<div class="character jin-character-female"></div>
+</div>
+</div><!--  .row -->
+</div><!--  .section-jin -->
+</div><!-- .races-container -->
+
+<!--  .media -->
+<script>
+var _clearingLabels = {
+viewMore: "View More",
+close: "Close",
+};
+</script>
+<div id="footer-playfreenow">
+<div class="row">
+<div class="columns">
+<div class="copy">
+<a href="/downloads.html" class="playfreenow icon">
+<span class="large">Play Free Now</span>
+</a>
+<a href="/downloads.html" class="downloadnow icon">
+<span class="large">Download Now</span>
+</a>
+</div>
+<!--  .copy -->
+</div>
+</div>
+<!--  .row -->
+</div>
+
+<div id="footer">
+<div class="top">
+<div class="row footer-links">
+<div class="small-12 columns footer-link-column-left sns-only-footer-links">
+<div class="small-12 small-centered columns column-sns">
+<h4>Follow Us</h4>
+<ul class="footer-list">
+<li>
+<a href="#" target="_blank"><i class="fa fa-facebook sns-footer"></i> Facebook</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitter sns-footer"></i> Twitter</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitch sns-footer"></i> Twitch</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-instagram sns-footer"></i> Instagram</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- .row -->
+<div class="row logo">
+<div class="columns bns-logo">
+<a href="#"><img src="img/global/footer-bns-logo.png" alt="Blade &amp; Soul" /></a>
+</div>
+</div>
+<div class="row legal">
+<div class="columns desktop copyright">
+<div class="copy">
+<p>©2019 NCSOFT Corporation. All rights reserved. All trademarks are the property of their respective owners.</p>
+</div>
+<!--  .copy -->
+<a href="#" target="_blank" class="gamerating-logo gamerating-en gamerating-ESRB">
+<img src="img/global/BnS_ESRB_RatedM.png" alt="ESRB" class="rating" />
+</a>
+</div>
+</div>
+<!-- .row -->
+</div>
+<!--  .top -->
+</div>
+
+
+<script src="js/main.js"></script>
+<script src="js/components-20210127.js"></script>
+<script src="/js/menu.js"></script>
+</body>
+</html>

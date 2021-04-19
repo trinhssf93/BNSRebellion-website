@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html class="no-js"> 
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Blade &amp; Soul Rebellion - Classes</title>
+<link rel="shortcut icon" href="img/favicon.ico">
+<meta name="description" content="Begin a heroic journey to confront dark forces and seek vengeance as a master of the martial arts in Blade & Soul, the free-to-play MMORPG."/>
+
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="bakaexpert/fonts.css" type="text/css" />
+<link rel="stylesheet" href="css/vendor.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/navigation.css">
+</head>
+<body data-lang="en" id="game-classes-page" class="classes-detail-page" >
+<script src="js/vendor.js"></script>
+<div class="age-gate-overlay age-gate">
+<div class="content-wrapper">
+<div class="row age-gate-content">
+<div class="columns">
+<div class="input-container">
+<div class="row">
+<div class="columns bns-age-gate-logo">
+<img src="img/site_age_gate_logo.jpg" alt="Blade &amp; Soul" />
+</div>
+</div>
+<form>
+<div class="row instructions">
+<p>Enter Your Date of Birth</p>
+</div>
+<div class="row agegate-container">
+<div class="columns small-centered input-container">
+<div class="row">
+<div class="columns small-3">
+<input class="agegate-field agegate-month" pattern="\d*" type="text" maxlength="2" name="dob[mm]" placeholder="MM">
+</div>
+<!--<div class="columns small-3 day-column" style="display: none !important;">
+<input class="agegate-field agegate-day" pattern="\d*" type="text" maxlength="2" name="dob[dd]" placeholder="DD" value="1">
+</div>-->
+<div class="columns small-3 end">
+<input class="agegate-field agegate-year" pattern="\d*" maxlength="4" type="text" name="dob[yy]" placeholder="YYYY">
+</div>
+</div>
+</div>
+</div>
+<div class="age-gate-msg"></div>
+<button disabled id="age-gate-submit-btn" type="submit" form="" value=""><span>Submit</span></button>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="js/agegate.js" ></script>
+<script>
+
+/**
+* AgeGate
+*/
+var isLandingPage = $('body').hasClass('freetoplay-landing-page');
+
+runAgegate(isLandingPage);
+
+</script>
+
+
+
+
+<!-- Holds navigation bat react component -->
+<!-- <script src="/js/navigation.js"></script> -->
+
+<div id="new-main-nav-app" class="contain-to-grid"></div>
+
+<div data-reactroot="" id="new-main-nav" onclick="toggleMenu()" style="top: 0px; position: fixed;">
+<div class="menu-btn">
+<div class="menu-icon"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="menu-contain">
+<a class="logo-link" href="#">
+<img class="logo" src="img/nav-bs-logo.png" />
+</a>
+<ul>
+
+<li class=""><a class="navlink" href="#">Home</a></li>
+<li class=""><a class="navlink" href="/about.html">About Game</a></li>
+<li class=""><a class="navlink" href="/races.html">Races</a></li>
+<li class=""><a class="navlink" href="/factions.html">Factions</a></li>
+<li class="active"><a class="navlink" href="/classes.html">Classes</a></li>
+<li class=""><a class="navlink" href="https://discord.gg/eqUyReD" target="_blank">Community</a></li>
+<li class=""><a class="navlink" href="/downloads.html">Download</a></li>
+
+</ul>
+
+<a class="play-free-btn logged-out" href="/register.html"><div class="play-free-btn-inner">REGISTER FREE NOW</div></a>
+</div>
+</div>
+<div id="classes-desktop" class="show-for-large-up">
+<div id="hero-banner" class="hero-banner">
+<div class="table">
+<div class="table-row">
+<div class="table-cell">
+<div class="row copy">
+<div class="columns">
+<h1>Classes</h1>
+<div class="subheader"><p>Train as one of 13 classes, each with their own strengths, defenses, abilities, and devastating combos.</p></div>
+</div>
+<div class="classes-nav">
+<div class="inner-classes-nav">
+<div class="row">
+<div id="0" class="small-1 columns ">
+<a href="/blade-master.html" class="class-icon blademaster">
+<span>Blade Master</span>
+</a>
+</div>
+<div id="1" class="small-1 columns ">
+<a href="/destroyer.html" class="class-icon destroyer">
+<span>Destroyer</span>
+</a>
+</div>
+<div id="2" class="small-1 columns ">
+<a href="/summoner.html" class="class-icon summoner">
+<span>Summoner</span>
+</a>
+</div>
+<div id="3" class="small-1 columns ">
+<a href="/force-master.html" class="class-icon forcemaster">
+<span>Force Master</span>
+</a>
+</div>
+<div id="4" class="small-1 columns ">
+<a href="/kung-fu-master.html" class="class-icon kungfumaster">
+<span>Kung Fu Master</span>
+</a>
+</div>
+<div id="5" class="small-1 columns ">
+<a href="/assassin.html" class="class-icon assassin">
+<span>Assassin</span>
+</a>
+</div>
+<div id="6" class="small-1 columns ">
+<a href="/blade-dancer.html" class="class-icon bladedancer">
+<span>Blade Dancer</span>
+</a>
+</div>
+<div id="7" class="small-1 columns ">
+<a href="/warlock.html" class="class-icon warlock">
+<span>Warlock</span>
+</a>
+</div>
+<div id="8" class="small-1 columns ">
+<a href="/soul-fighter.html" class="class-icon soulfighter">
+<span>Soul Fighter</span>
+</a>
+</div>
+
+</div><!-- .row -->
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div><!-- .hero-banner -->
+</div>
+
+<div id="classes-mobile" class="hide-for-large-up">
+<div id="mobile-hero-banner" class="hero-banner">
+<div class="row copy">
+<div class="columns">
+<h1>Classes</h1>
+<div class="subheader"><p>Train as one of 13 classes, each with their own strengths, defenses, abilities, and devastating combos.</p></div>
+</div>
+</div>
+<div class="classes-nav">
+<div class="row">
+<div class="columns">
+<ul>
+<li class="mobile-class-link blademaster small-1 column">
+<a href="#">Blade Master</a>
+</li>
+<li class="mobile-class-link destroyer small-1 column">
+<a href="#">Destroyer</a>
+</li>
+<li class="mobile-class-link summoner small-1 column">
+<a href="#">Summoner</a>
+</li>
+<li class="mobile-class-link forcemaster small-1 column">
+<a href="#">Force Master</a>
+</li>
+<li class="mobile-class-link kungfumaster small-1 column">
+<a href="#">Kung Fu Master</a>
+</li>
+<li class="mobile-class-link assassin small-1 column">
+<a href="#">Assassin</a>
+</li>
+<li class="mobile-class-link bladedancer small-1 column">
+<a href="#">Blade Dancer</a>
+</li>
+<li class="mobile-class-link warlock small-1 column">
+<a href="#">Warlock</a>
+</li>
+<li class="mobile-class-link soulfighter small-1 column">
+<a href="#">Soul Fighter</a>
+</li>
+</ul>
+</div>
+</div><!-- .row -->
+</div>
+
+</div>
+</div>
+
+<div id="footer-playfreenow">
+<div class="row">
+<div class="columns">
+<div class="copy">
+<a href="/downloads.html" class="playfreenow icon">
+<span class="large">Play Free Now</span>
+</a>
+<a href="/downloads.html" class="downloadnow icon">
+<span class="large">Download Now</span>
+</a>
+</div>
+<!--  .copy -->
+</div>
+</div>
+<!--  .row -->
+</div>
+
+<div id="footer">
+<div class="top">
+<div class="row footer-links">
+<div class="small-12 columns footer-link-column-left sns-only-footer-links">
+<div class="small-12 small-centered columns column-sns">
+<h4>Follow Us</h4>
+<ul class="footer-list">
+<li>
+<a href="#" target="_blank"><i class="fa fa-facebook sns-footer"></i> Facebook</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitter sns-footer"></i> Twitter</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitch sns-footer"></i> Twitch</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-instagram sns-footer"></i> Instagram</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- .row -->
+<div class="row logo">
+<div class="columns bns-logo">
+<a href="#"><img src="img/global/footer-bns-logo.png" alt="Blade &amp; Soul" /></a>
+</div>
+</div>
+<div class="row legal">
+<div class="columns desktop copyright">
+<div class="copy">
+<p>©2019 NCSOFT Corporation. All rights reserved. All trademarks are the property of their respective owners.</p>
+</div>
+<!--  .copy -->
+<a href="#" target="_blank" class="gamerating-logo gamerating-en gamerating-ESRB">
+<img src="img/global/BnS_ESRB_RatedM.png" alt="ESRB" class="rating" />
+</a>
+</div>
+</div>
+<!-- .row -->
+</div>
+<!--  .top -->
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/components-20210127.js"></script>
+<script src="/js/menu.js"></script>
+</body>
+</html>

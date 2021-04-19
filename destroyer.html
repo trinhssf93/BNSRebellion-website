@@ -1,0 +1,520 @@
+﻿<!DOCTYPE html>
+<html class="no-js"> 
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Blade &amp; Soul</title>
+<link rel="shortcut icon" href="img/global/favicon.ico">
+<meta name="description" content="Begin a heroic journey to confront dark forces and seek vengeance as a master of the martial arts in Blade & Soul, the free-to-play MMORPG."/>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="bakaexpert/fonts.css" type="text/css" />
+<link rel="stylesheet" href="css/vendor.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/navigation.css">
+
+</head>
+<body data-lang="en" id="game-classes-detail-page-blade-master" class="classes-detail-page full-content-class multiGallery" data-media-tags="blade-master">
+
+<script src="js/vendor.js"></script>
+
+<div class="age-gate-overlay age-gate">
+<div class="content-wrapper">
+<div class="row age-gate-content">
+<div class="columns">
+<div class="input-container">
+<div class="row">
+<div class="columns bns-age-gate-logo">
+<img src="img/global/site_age_gate_logo.jpg" alt="Blade &amp; Soul" />
+</div>
+</div>
+<form>
+<div class="row instructions">
+<p>Enter Your Date of Birth</p>
+</div>
+<div class="row agegate-container">
+<div class="columns small-centered input-container">
+<div class="row">
+<div class="columns small-3">
+<input class="agegate-field agegate-month" pattern="\d*" type="text" maxlength="2" name="dob[mm]" placeholder="MM">
+</div>
+<!--<div class="columns small-3 day-column" style="display: none !important;">
+<input class="agegate-field agegate-day" pattern="\d*" type="text" maxlength="2" name="dob[dd]" placeholder="DD" value="1">
+</div>-->
+<div class="columns small-3 end">
+<input class="agegate-field agegate-year" pattern="\d*" maxlength="4" type="text" name="dob[yy]" placeholder="YYYY">
+</div>
+</div>
+</div>
+</div>
+<div class="age-gate-msg"></div>
+<button disabled id="age-gate-submit-btn" type="submit" form="" value=""><span>Submit</span></button>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="js/agegate.js" ></script>
+<script>
+
+/**
+* AgeGate
+*/
+var isLandingPage = $('body').hasClass('freetoplay-landing-page');
+
+runAgegate(isLandingPage);
+
+</script>
+
+</script>
+
+
+
+<!-- Holds navigation bat react component -->
+<!-- <script src="/js/navigation.js"></script> -->
+
+<div id="new-main-nav-app" class="contain-to-grid"></div>
+<div data-reactroot="" id="new-main-nav" onclick="toggleMenu()" style="top: 0px; position: fixed;">
+<div class="menu-btn">
+<div class="menu-icon"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="menu-contain">
+<a class="logo-link" href="#">
+<img class="logo" src="img/nav-bs-logo.png" />
+</a>
+<ul>
+
+<li class=""><a class="navlink" href="#">Home</a></li>
+<li class=""><a class="navlink" href="/about.html">About Game</a></li>
+<li class=""><a class="navlink" href="/races.html">Races</a></li>
+<li class=""><a class="navlink" href="/factions.html">Factions</a></li>
+<li class="active"><a class="navlink" href="/classes.html">Classes</a></li>
+<li class=""><a class="navlink" href="/register.html">Register</a></li>
+<li class=""><a class="navlink" href="/downloads.html">Downloads</a></li>
+
+</ul>
+<a class="play-free-btn logged-out" href="/downloads.html"><div class="play-free-btn-inner">PLAY FREE NOW</div></a>
+</div>
+</div>
+
+<div class="character-classes-details show-for-large-up">
+<div id="section-destroyer" class="class-section destroyer">
+<div class="class-container">
+
+<div class="row">
+<div class="medium-6 columns class-detail">
+<div class="custom-dropdown">
+<div class="default-text"></div>
+<i class="fa fa-angle-down"></i>
+<div class="items-list">
+
+<a class="item" href="/blade-master.html">
+Blade Master
+</a>
+<a class="item active-item" href="/destroyer.html">
+Destroyer
+</a>
+<a class="item " href="/summoner.html">
+Summoner
+</a>
+<a class="item " href="/forcemaster.html">
+Force Master
+</a>
+<a class="item " href="/kung-fu-master.html">
+Kung Fu Master
+</a>
+<a class="item " href="/assassin.html">
+Assassin
+</a>
+<a class="item " href="/blade-dancer.html">
+Blade Dancer
+</a>
+<a class="item " href="/warlock.html">
+Warlock
+</a>
+<a class="item " href="/soul-fighter.html">
+Soul Fighter
+</a>
+</div>
+</div>
+
+<!--<div class="custom-dropdown">-->
+<!--<div class="default-text">blademaster</div>-->
+<!--<i class="fa fa-caret-down"></i>-->
+<!--<div class="items-list">-->
+<!---->
+<!--</div>-->
+<!--</div>-->
+
+
+<div class="classes-nav">
+<div class="inner-classes-nav">
+<div class="row">
+<div id="0" class="small-1 columns">
+<a href="/blade-master.html" class="class-icon blademaster">
+<span>Blade Master</span>
+</a>
+</div>
+<div id="1" class="small-1 columns active">
+<a href="/destroyer.html" class="class-icon destroyer">
+<span>Destroyer</span>
+</a>
+</div>
+<div id="2" class="small-1 columns">
+<a href="/summoner.html" class="class-icon summoner">
+<span>Summoner</span>
+</a>
+</div>
+<div id="3" class="small-1 columns ">
+<a href="/force-master.html" class="class-icon forcemaster">
+<span>Force Master</span>
+</a>
+</div>
+<div id="4" class="small-1 columns ">
+<a href="/kung-fu-master.html" class="class-icon kungfumaster">
+<span>Kung Fu Master</span>
+</a>
+</div>
+<div id="5" class="small-1 columns ">
+<a href="/assassin.html" class="class-icon assassin">
+<span>Assassin</span>
+</a>
+</div>
+<div id="6" class="small-1 columns ">
+<a href="/blade-dancer.html" class="class-icon bladedancer">
+<span>Blade Dancer</span>
+</a>
+</div>
+<div id="7" class="small-1 columns ">
+<a href="/warlock.html" class="class-icon warlock">
+<span>Warlock</span>
+</a>
+</div>
+<div id="8" class="small-1 columns ">
+<a href="/soul-fighter.html" class="class-icon soulfighter">
+<span>Soul Fighter</span>
+</a>
+</div>
+
+</div><!-- .row -->
+</div>
+</div>
+
+            <h2>Destroyer</h2>
+            <div class="class-video-loop">
+              <div class="detail-video-button">
+                <video autoplay="" loop="" muted="" id="bgvid" poster="/video/classes/destroyer/destroyer_fallback_video_thumb.png">
+                  <source src="/video/classes/destroyer/destroyer_loop.ogv" type="video/ogv">
+                  <source src="/video/classes/destroyer/destroyer_loop.webm" type="video/webm">
+                  <source src="/video/classes/destroyer/destroyer_loop.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div id="video-destroyer" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                <div class="responsive-video-container">
+                  <iframe id="fullVideo" width="560" height="315" src="./Destroyer_files/BunmjTNGjSs.html" frameborder="0" allowfullscreen="" data-gtm-yt="true" data-gtm-yt-inspected-8849921_34="true" data-gtm-yt-inspected-1_27="true" data-gtm-yt-inspected-1_25="true"></iframe>
+                </div>
+                <a class="close-reveal-modal" aria-label="Close">×</a>
+              </div>
+            </div>
+            <p class="difficulty normal"><span class="difficulty-label">Difficulty:</span> <i class="fa fa-star"></i><i class="fa fa-star"></i><span class="half-star"><i class="fa fa-star-half-empty"></i><i class="fa fa-star-half"></i></span><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> <span class="difficulty-level">Normal</span></p>
+            <div class="description"><p>True to their name, Destroyers have the most stopping power of any class in Blade &amp; Soul. With their overwhelming presence, Destroyers provoke enemies into attacking them as the biggest threat around. Once they have their opponent’s attention, they overpower all who stand in their way.</p><p>The iconic skill of the Destroyer is their ability to Grab a staggered enemy, dominating them in battle as they are left defenseless before the Destroyer’s might. Fallen opponents become weapons as the Destroyer hurls them into other enemies, while friends who could not keep up are safely carried out of harm’s way.</p><p>The Destroyer’s strong attack power and defensive skill make them seem like a lone wolf, but they are most effective in group combat. They complement other classes like the Assassin, Force Master, or Kung Fu Masters, allowing each to set up devastating combinations and Joint Attacks.</p></div>
+          
+            <p class="available-races">Available Races: <a href="/races.html#races-gon">Gon</a></p>
+          </div>
+        </div><!--  .row -->
+        <div class="row">
+          <div class="medium-12 columns class-media">
+            <div class="xlarge-4 columns class-media-detail">
+              <div class="move-chart">
+                <a href="/img/game/classes/moves_chart/destroyer/destroyer_moves_chart_en.pdf" target="_new">
+                  <h6 class="skills-header">Destroyer Move Chart</h6>
+                </a>
+                <div class="move-chart-wrap">
+                  <a href="/img/game/classes/moves_chart/destroyer/destroyer_moves_chart_en.pdf" target="_new">
+                    <img class="move-chart-thumb" src="./Destroyer_files/destroyer_detailpage_moves_chart_thumb.jpg">
+                    <div class="media-label">
+                      <div class="media-label-content">
+                        <p class="type">Move Chart</p>
+                        <h3>Destroyer</h3>
+                        <div class="media-download"></div>
+                      </div><!--  .media-label -->
+                    </div>
+                  </a>
+                </div>
+              </div><!--.move-chart-->
+              <div class="skill-details">
+                <h6 class="skills-header">Notable Skills</h6>
+                <ul class="skills-list">
+                  <li class="class-skill judgement">
+                    <div class="icon-container"><img src="./Destroyer_files/icon_skill_destroyer_judgement.png"></div>
+                    <span>Judgement</span>
+                  </li>
+                  <li class="class-skill grab">
+                    <div class="icon-container"><img src="./Destroyer_files/icon_skill_destroyer_grab.png"></div>
+                    <span>Grab</span>
+                  </li>
+                  <li class="class-skill hurricane">
+                    <div class="icon-container"><img src="./Destroyer_files/icon_skill_destroyer_hurricane.png"></div>
+                    <span>Hurricane</span>
+                  </li>
+                  <li class="class-skill stone-shield">
+                    <div class="icon-container"><img src="./Destroyer_files/icon_skill_destroyer_stoneshield.png"></div>
+                    <span>Stone Shield</span>
+                  </li>
+                </ul>
+              </div>
+            </div><!--4 col-->
+            <div class="xlarge-4 columns media class-media-detail screenshots" data-category="screenshots" data-tags="destroyer">
+              <div class="skill-detail-gallery">
+                <h6 class="skills-header">Screenshots</h6>
+                <div class="media-items large-collapse screenshots-media-section">
+                  <!-- <div class="grid-sizer"></div> -->
+                <div class="media-item" data-clearing-id="b35f254a-ec7e-4fd0-a2e8-21774b2c3dfd" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Destroyer 06</h3></div><!--  .media-label --></div><img src="./Destroyer_files/thumb_destroyer_06.jpg" alt="Destroyer 06"></div></div><div class="media-item" data-clearing-id="6d6d1e9a-80cf-4845-aee1-2e352bcb78b4" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Destroyer 05</h3></div><!--  .media-label --></div><img src="./Destroyer_files/thumb_destroyer_05.jpg" alt="Destroyer 05"></div></div><div class="media-item" data-clearing-id="151dc7d2-c1b7-4952-903e-2c22d234179d" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Destroyer 04</h3></div><!--  .media-label --></div><img src="./Destroyer_files/thumb_destroyer_04.jpg" alt="Destroyer 04"></div></div><div class="media-item" data-clearing-id="51b6fa19-9f76-4ca6-8ffe-0b9e1167c70e" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Destroyer 03</h3></div><!--  .media-label --></div><img src="./Destroyer_files/thumb_destroyer_03.jpg" alt="Destroyer 03"></div></div><div class="media-item" data-clearing-id="2bf477f5-0e85-469b-8634-46e0aab74b9a" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Destroyer 01</h3></div><!--  .media-label --></div><img src="./Destroyer_files/thumb_destroyer_01.jpg" alt="Destroyer 01"></div></div><div class="media-item" data-clearing-id="35d49563-7f4d-497b-bd84-a5cefc92b69b" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Destroyer 02</h3></div><!--  .media-label --></div><img src="./Destroyer_files/thumb_destroyer_02.jpg" alt="Destroyer 02"></div></div></div>
+                <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/destroyer_06.jpg" data-clearing-id="b35f254a-ec7e-4fd0-a2e8-21774b2c3dfd"><img data-title="Destroyer 06" data-media-type="Screenshot" data-filter-type="Screenshot" src="./Destroyer_files/carousel_thumb_destroyer_06.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/destroyer_05.jpg" data-clearing-id="6d6d1e9a-80cf-4845-aee1-2e352bcb78b4"><img data-title="Destroyer 05" data-media-type="Screenshot" data-filter-type="Screenshot" src="./Destroyer_files/carousel_thumb_destroyer_05.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/destroyer_04.jpg" data-clearing-id="151dc7d2-c1b7-4952-903e-2c22d234179d"><img data-title="Destroyer 04" data-media-type="Screenshot" data-filter-type="Screenshot" src="./Destroyer_files/carousel_thumb_destroyer_04.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/destroyer_03.jpg" data-clearing-id="51b6fa19-9f76-4ca6-8ffe-0b9e1167c70e"><img data-title="Destroyer 03" data-media-type="Screenshot" data-filter-type="Screenshot" src="./Destroyer_files/carousel_thumb_destroyer_03.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/destroyer_01.jpg" data-clearing-id="2bf477f5-0e85-469b-8634-46e0aab74b9a"><img data-title="Destroyer 01" data-media-type="Screenshot" data-filter-type="Screenshot" src="./Destroyer_files/carousel_thumb_destroyer_01.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/destroyer_02.jpg" data-clearing-id="35d49563-7f4d-497b-bd84-a5cefc92b69b"><img data-title="Destroyer 02" data-media-type="Screenshot" data-filter-type="Screenshot" src="./Destroyer_files/carousel_thumb_destroyer_02.jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                <script>
+                  var _clearingLabels = {
+                    viewMore : "View More",
+                    close : "Close"
+                  };
+                </script>
+              </div>
+            </div>
+            <div class="xlarge-4 columns media class-media-detail wallpaper" data-category="wallpaper" data-tags="destroyer">
+              <div class="skill-detail-gallery">
+                <h6 class="skills-header">Wallpaper</h6>
+                <div class="media-items large-collapse wallpaper-media-section">
+                  <!-- <div class="grid-sizer"></div> -->
+                <div class="media-item" data-clearing-id="cd2bcf83-6b1a-4f1c-a78a-97ccc0db0255" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Destroyer 03</h3></div><!--  .media-label --></div><img src="./Destroyer_files/destroyer_03_thumbnail_420x260.jpg" alt="Destroyer 03"></div></div><div class="media-item" data-clearing-id="bf282093-6fdd-4dee-9285-5a85bd93af57" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Destroyer 02</h3></div><!--  .media-label --></div><img src="./Destroyer_files/destroyer_02_thumbnail_420x260.jpg" alt="Destroyer 02"></div></div><div class="media-item" data-clearing-id="a9b2deaf-440c-40eb-ac6c-e70caca17112" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Destroyer 01</h3></div><!--  .media-label --></div><img src="./Destroyer_files/destroyer_01_thumbnail_420x260.jpg" alt="Destroyer 01"></div></div><div class="media-item" data-clearing-id="feaf4a6f-18a2-440d-aa16-cb8984052666" data-media-type="Wallpaper" data-filter-type="Wallpaper"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Destroyer Moves Chart</h3></div><!--  .media-label --></div><img src="./Destroyer_files/destroyer_moves_chart_thumbnail_420x260.jpg" alt="Destroyer Moves Chart"></div></div></div>
+                <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_03_wide_2880x1800.jpg" data-clearing-id="cd2bcf83-6b1a-4f1c-a78a-97ccc0db0255"><img data-title="Destroyer 03" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_03_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/destroyer_03_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/destroyer_03_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/destroyer_03_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./Destroyer_files/destroyer_03_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_02_wide_2880x1800.jpg" data-clearing-id="bf282093-6fdd-4dee-9285-5a85bd93af57"><img data-title="Destroyer 02" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_02_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/destroyer_02_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/destroyer_02_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/destroyer_02_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./Destroyer_files/destroyer_02_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_01_wide_2880x1800.jpg" data-clearing-id="a9b2deaf-440c-40eb-ac6c-e70caca17112"><img data-title="Destroyer 01" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_01_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/destroyer_01_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/destroyer_01_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/destroyer_01_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./Destroyer_files/destroyer_01_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_moves_chart_wide_2880x1800_en.jpg" data-clearing-id="feaf4a6f-18a2-440d-aa16-cb8984052666"><img data-title="Destroyer Moves Chart" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_moves_chart_wide_2880x1800_en.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/destroyer_moves_chart_standard_2048x1536_en.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/destroyer_moves_chart_tablet_2048x2048_en.jpg" data-filter-type="Wallpaper" src="./Destroyer_files/destroyer_moves_chart_carousel_160x100.jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                <script>
+                  var _clearingLabels = {
+                    viewMore : "View More",
+                    close : "Close"
+                  };
+                </script>
+              </div>
+            </div>
+          </div><!-- 12 col -->
+        </div><!--  .row -->
+      
+  </div>
+</div><!--  .class-section -->
+
+</div>
+
+<div class="character-classes-details hide-for-large-up">
+    <div id="section-mobile-destroyer" class="class-mobile-section destroyer">
+      
+        <div class="custom-dropdown">
+  <div class="default-text">
+      Destroyer
+      </div>
+  <i class="fa fa-angle-down"></i>
+  <div class="items-list">
+
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/blade-master">
+      Blade Master
+      </a>
+      <a class="item active-item" href="https://www.bladeandsoul.com/en/game/classes/destroyer">
+      Destroyer
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/summoner">
+      Summoner
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/force-master">
+      Force Master
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/kung-fu-master">
+      Kung Fu Master
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/assassin">
+      Assassin
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/blade-dancer">
+      Blade Dancer
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/warlock">
+      Warlock
+      </a>
+      <a class="item " href="https://www.bladeandsoul.com/en/game/classes/soul-fighter">
+      Soul Fighter
+      </a>
+  </div>
+</div>
+
+<!--<div class="custom-dropdown">-->
+  <!--<div class="default-text">destroyer</div>-->
+  <!--<i class="fa fa-caret-down"></i>-->
+  <!--<div class="items-list">-->
+    <!---->
+  <!--</div>-->
+<!--</div>-->
+
+
+          <div class="row">
+            <div class="columns copy">
+              <div class="class-info">
+                <h2>Destroyer</h2>
+                <p class="difficulty normal"><span class="difficulty-label">Difficulty:</span> <i class="fa fa-star"></i><i class="fa fa-star"></i><span class="half-star"><i class="fa fa-star-half-empty"></i><i class="fa fa-star-half"></i></span><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i> <span class="difficulty-level">Normal</span></p>
+                <div class="description"><p>True to their name, Destroyers have the most stopping power of any class in Blade &amp; Soul. With their overwhelming presence, Destroyers provoke enemies into attacking them as the biggest threat around. Once they have their opponent’s attention, they overpower all who stand in their way.</p><p>The iconic skill of the Destroyer is their ability to Grab a staggered enemy, dominating them in battle as they are left defenseless before the Destroyer’s might. Fallen opponents become weapons as the Destroyer hurls them into other enemies, while friends who could not keep up are safely carried out of harm’s way.</p><p>The Destroyer’s strong attack power and defensive skill make them seem like a lone wolf, but they are most effective in group combat. They complement other classes like the Assassin, Force Master, or Kung Fu Masters, allowing each to set up devastating combinations and Joint Attacks.</p></div>
+                
+                <div class="available-races-section">
+                  <span class="available-races">Available Races: </span>
+                  <span class="classes"><a href="/races.html#races-gon">Gon</a></span>
+                </div>
+              </div>
+              <div class="move-chart">
+                <a href="/img/game/classes/moves_chart/destroyer/destroyer_moves_chart_en.pdf" target="_new"><h6 class="skills-header">Destroyer Move Chart</h6></a>
+                <a href="/img/game/classes/moves_chart/destroyer/destroyer_moves_chart_en.pdf" target="_new"><img class="move-chart-thumb" src="./Destroyer_files/destroyer_detailpage_moves_chart_thumb.jpg"></a>
+              </div><!--.move-chart-->
+              <div class="skill-details">
+                <h6 class="skills-header">Notable Skills</h6>
+                <div class="skill-list-container">
+                  <div class="skills-list row small-collapse">
+                    <div class="columns small-6 class-skill class-skill-judgement">
+                      <div class="icon-container"><img src="./Destroyer_files/icon_skill_destroyer_judgement.png"></div>
+                      <div class="text-container">
+                        <div class="skill-label">Judgement</div>
+                        &nbsp;
+                      </div>
+                    </div>
+                    <div class="columns small-6 class-skill class-skill-grab">
+                      <div class="icon-container"><img src="./Destroyer_files/icon_skill_destroyer_grab.png"></div>
+                      <div class="text-container">
+                        <div class="skill-label">Grab</div>
+                        &nbsp;
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills-list row small-collapse">
+                    <div class="columns small-6 class-skill class-skill-hurricane">
+                      <div class="icon-container"><img src="./Destroyer_files/icon_skill_destroyer_hurricane.png"></div>
+                      <div class="text-container">
+                        <div class="skill-label">Hurricane</div>
+                        &nbsp;
+                      </div>
+                    </div>
+                    <div class="columns small-6 class-skill class-skill-stone-shield">
+                      <div class="icon-container"><img src="./Destroyer_files/icon_skill_destroyer_stoneshield.png"></div>
+                      <div class="text-container">
+                        <div class="skill-label">Stone Shield</div>
+                        &nbsp;
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media class-media-detail screenshots-mobile" data-category="screenshots" data-tags="destroyer">
+                    <div class="skill-details">
+                      <h6 class="skills-header">Screenshots</h6>
+                      <div class="media-items medium-collapse screenshots-mobile-media-section">
+                        <div class="grid-sizer"></div>
+                      <div class="media-item" data-clearing-id="b35f254a-ec7e-4fd0-a2e8-21774b2c3dfdmobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Destroyer 06</h3></div><!--  .media-label --></div><img src="./Destroyer_files/thumb_destroyer_06.jpg" alt="Destroyer 06"></div></div><div class="media-item" data-clearing-id="6d6d1e9a-80cf-4845-aee1-2e352bcb78b4mobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Destroyer 05</h3></div><!--  .media-label --></div><img src="./Destroyer_files/thumb_destroyer_05.jpg" alt="Destroyer 05"></div></div><div class="media-item" data-clearing-id="151dc7d2-c1b7-4952-903e-2c22d234179dmobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Destroyer 04</h3></div><!--  .media-label --></div><img src="./Destroyer_files/thumb_destroyer_04.jpg" alt="Destroyer 04"></div></div><div class="media-item" data-clearing-id="51b6fa19-9f76-4ca6-8ffe-0b9e1167c70emobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Destroyer 03</h3></div><!--  .media-label --></div><img src="./Destroyer_files/thumb_destroyer_03.jpg" alt="Destroyer 03"></div></div><div class="media-item" data-clearing-id="2bf477f5-0e85-469b-8634-46e0aab74b9amobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Destroyer 01</h3></div><!--  .media-label --></div><img src="./Destroyer_files/thumb_destroyer_01.jpg" alt="Destroyer 01"></div></div><div class="media-item" data-clearing-id="35d49563-7f4d-497b-bd84-a5cefc92b69bmobile" data-media-type="Screenshot" data-filter-type="Screenshot"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Screenshot</p><h3>Destroyer 02</h3></div><!--  .media-label --></div><img src="./Destroyer_files/thumb_destroyer_02.jpg" alt="Destroyer 02"></div></div></div>
+                      <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/destroyer_06.jpg" data-clearing-id="b35f254a-ec7e-4fd0-a2e8-21774b2c3dfdmobile"><img data-title="Destroyer 06" data-media-type="Screenshot" data-filter-type="Screenshot" src="./Destroyer_files/carousel_thumb_destroyer_06.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/destroyer_05.jpg" data-clearing-id="6d6d1e9a-80cf-4845-aee1-2e352bcb78b4mobile"><img data-title="Destroyer 05" data-media-type="Screenshot" data-filter-type="Screenshot" src="./Destroyer_files/carousel_thumb_destroyer_05.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/destroyer_04.jpg" data-clearing-id="151dc7d2-c1b7-4952-903e-2c22d234179dmobile"><img data-title="Destroyer 04" data-media-type="Screenshot" data-filter-type="Screenshot" src="./Destroyer_files/carousel_thumb_destroyer_04.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/destroyer_03.jpg" data-clearing-id="51b6fa19-9f76-4ca6-8ffe-0b9e1167c70emobile"><img data-title="Destroyer 03" data-media-type="Screenshot" data-filter-type="Screenshot" src="./Destroyer_files/carousel_thumb_destroyer_03.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/destroyer_01.jpg" data-clearing-id="2bf477f5-0e85-469b-8634-46e0aab74b9amobile"><img data-title="Destroyer 01" data-media-type="Screenshot" data-filter-type="Screenshot" src="./Destroyer_files/carousel_thumb_destroyer_01.jpg"></a></li><li class="clearing-item" data-media-type="Screenshot" data-filter-type="Screenshot"><a href="https://static.bladeandsoul.com/uploads/screenshot/destroyer_02.jpg" data-clearing-id="35d49563-7f4d-497b-bd84-a5cefc92b69bmobile"><img data-title="Destroyer 02" data-media-type="Screenshot" data-filter-type="Screenshot" src="./Destroyer_files/carousel_thumb_destroyer_02.jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                      <script>
+                        var _clearingLabels = {
+                          viewMore : "View More",
+                          close : "Close"
+                        };
+                      </script>
+                    </div>
+                  </div>
+                  <div class="media class-media-detail wallpaper-mobile" data-category="wallpaper" data-tags="destroyer">
+                    <div class="skill-details">
+                      <h6 class="skills-header">Wallpaper</h6>
+                      <div class="media-items medium-collapse wallpaper-mobile-media-section" style="position: relative; height: 0px;">
+                        <div class="grid-sizer"></div>
+                      <div class="media-item" data-clearing-id="cd2bcf83-6b1a-4f1c-a78a-97ccc0db0255mobile" data-media-type="Wallpaper" data-filter-type="Wallpaper" style="position: absolute; opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 0.4s;"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Destroyer 03</h3></div><!--  .media-label --></div><img src="./Destroyer_files/destroyer_03_thumbnail_420x260.jpg" alt="Destroyer 03"></div></div><div class="media-item" data-clearing-id="bf282093-6fdd-4dee-9285-5a85bd93af57mobile" data-media-type="Wallpaper" data-filter-type="Wallpaper" style="position: absolute; opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 0.4s;"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Destroyer 02</h3></div><!--  .media-label --></div><img src="./Destroyer_files/destroyer_02_thumbnail_420x260.jpg" alt="Destroyer 02"></div></div><div class="media-item" data-clearing-id="a9b2deaf-440c-40eb-ac6c-e70caca17112mobile" data-media-type="Wallpaper" data-filter-type="Wallpaper" style="position: absolute; opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 0.4s;"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Destroyer 01</h3></div><!--  .media-label --></div><img src="./Destroyer_files/destroyer_01_thumbnail_420x260.jpg" alt="Destroyer 01"></div></div><div class="media-item" data-clearing-id="feaf4a6f-18a2-440d-aa16-cb8984052666mobile" data-media-type="Wallpaper" data-filter-type="Wallpaper" style="position: absolute; opacity: 1; transform: scale(1); transition-property: opacity, transform; transition-duration: 0.4s;"><div class="wrap"><div class="media-label"><div class="media-label-content"><p class="type">Wallpaper</p><h3>Destroyer Moves Chart</h3></div><!--  .media-label --></div><img src="./Destroyer_files/destroyer_moves_chart_thumbnail_420x260.jpg" alt="Destroyer Moves Chart"></div></div></div>
+                      <div class="clearing-assembled"><div><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#" class="clearing-close" aria-label="Close"></a><div class="visible-img" style="display: none"><div class="clearing-touch-label"></div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="clearing-caption"></div><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#" class="clearing-main-prev"><span></span></a><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#" class="clearing-main-next"><span></span></a><p class="clearing-view-more"><a href="https://www.bladeandsoul.com/en/game/classes/destroyer/#"><span>View More</span></a></p></div><img class="clearing-preload-next" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><img class="clearing-preload-prev" style="display: none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" alt=""><div class="carousel"><ul class="clearingWrap clearing-thumbs media-clearing" data-clearing=""><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_03_wide_2880x1800.jpg" data-clearing-id="cd2bcf83-6b1a-4f1c-a78a-97ccc0db0255mobile"><img data-title="Destroyer 03" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_03_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/destroyer_03_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/destroyer_03_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/destroyer_03_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./Destroyer_files/destroyer_03_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_02_wide_2880x1800.jpg" data-clearing-id="bf282093-6fdd-4dee-9285-5a85bd93af57mobile"><img data-title="Destroyer 02" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_02_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/destroyer_02_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/destroyer_02_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/destroyer_02_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./Destroyer_files/destroyer_02_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_01_wide_2880x1800.jpg" data-clearing-id="a9b2deaf-440c-40eb-ac6c-e70caca17112mobile"><img data-title="Destroyer 01" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_01_wide_2880x1800.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/destroyer_01_standard_2048x1536.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/destroyer_01_tablet_2048x2048.jpg" data-wp-xs="//static.bladeandsoul.com/uploads/wallpaper/mobile/destroyer_01_mobile_1080x1920.jpg" data-filter-type="Wallpaper" src="./Destroyer_files/destroyer_01_carousel_160x100.jpg"></a></li><li class="clearing-item" data-media-type="Wallpaper" data-filter-type="Wallpaper"><a href="https://static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_moves_chart_wide_2880x1800_en.jpg" data-clearing-id="feaf4a6f-18a2-440d-aa16-cb8984052666mobile"><img data-title="Destroyer Moves Chart" data-media-type="Wallpaper" data-wp-lg="//static.bladeandsoul.com/uploads/wallpaper/wide/destroyer_moves_chart_wide_2880x1800_en.jpg" data-wp-md="//static.bladeandsoul.com/uploads/wallpaper/standard/destroyer_moves_chart_standard_2048x1536_en.jpg" data-wp-sm="//static.bladeandsoul.com/uploads/wallpaper/tablet/destroyer_moves_chart_tablet_2048x2048_en.jpg" data-filter-type="Wallpaper" src="./Destroyer_files/destroyer_moves_chart_carousel_160x100.jpg"></a></li></ul><a href="javascript:void(0);" class="clearing-carousel-close">Close <span></span></a></div></div></div><!--id="media-clearing"-->
+                      <script>
+                        var _clearingLabels = {
+                          viewMore : "View More",
+                          close : "Close"
+                        };
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+</div><!--  .class-section -->
+
+</div>
+
+
+<!-- added footer-freetoplay.html for freetoplay page ONLY -->
+<div id="footer-playfreenow">
+<div class="row">
+<div class="columns">
+<div class="copy">
+<a href="/downloads.html" class="playfreenow icon">
+<span class="large">Play Free Now</span>
+</a>
+<a href="/downloads.html" class="downloadnow icon">
+<span class="large">Download Now</span>
+</a>
+</div>
+</div>
+</div><!--  .row -->
+</div>
+
+<div id="footer">
+<div class="top">
+<div class="row footer-links">
+<div class="small-12 columns footer-link-column-left sns-only-footer-links">
+<div class="small-12 small-centered columns column-sns">
+<h4>Follow Us</h4>
+<ul class="footer-list">
+<li>
+<a href="#" target="_blank"><i class="fa fa-facebook sns-footer"></i> Facebook</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitter sns-footer"></i> Twitter</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitch sns-footer"></i> Twitch</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-instagram sns-footer"></i> Instagram</a>
+</li>
+</ul>
+</div>
+</div>
+
+</div><!-- .row -->
+<div class="row logo">
+<div class="columns bns-logo">
+<a href="#"><img src="img/global/footer-bns-logo.png" alt="Blade &amp; Soul"></a>
+</div>
+</div>
+<div class="row legal">
+<div class="columns desktop copyright">
+<div class="copy">
+<p>©2019 NCSOFT Corporation. All rights reserved. All trademarks are the property of their respective owners.</p>
+</div><!--  .copy -->
+<a href="#" target="_blank" class="gamerating-logo gamerating-en gamerating-ESRB">
+<img src="img/global/BnS_ESRB_RatedM.png" alt="ESRB" class="rating">
+</a>
+</div>
+</div><!-- .row -->
+
+</div><!--  .top -->
+</div><!-- #footer  -->
+
+
+<script src="js/main.js"></script>
+<script src="js/components-20210127.js"></script>
+<script src="/js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,857 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blade &amp; Soul Rebellion - About</title>
+<link rel="shortcut icon" href="http://static.bladeandsoul.com/img/global/favicon.ico" />
+<meta name="description" content="Begin a heroic journey to confront dark forces and seek vengeance as a master of the martial arts in Blade & Soul, the free-to-play MMORPG." />
+
+<link rel="stylesheet" href="css/all.min.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="bakaexpert/fonts.css" type="text/css" />
+<link rel="stylesheet" href="css/vendor.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/navigation.css" />
+</head>
+<body data-lang="en" id="home-page">
+<script src="js/vendor.js"></script>
+
+<div class="age-gate-overlay age-gate">
+<div class="content-wrapper">
+<div class="row age-gate-content">
+<div class="columns">
+<div class="input-container">
+<div class="row">
+<div class="columns bns-age-gate-logo">
+<img src="img/global/site_age_gate_logo.jpg" alt="Blade &amp; Soul" />
+</div>
+</div>
+<form>
+<div class="row instructions">
+<p>Enter Your Date of Birth</p>
+</div>
+<div class="row agegate-container">
+<div class="columns small-centered input-container">
+<div class="row">
+<div class="columns small-3">
+<input class="agegate-field agegate-month" pattern="\d*" type="text" maxlength="2" name="dob[mm]" placeholder="MM" />
+</div>
+<!--<div class="columns small-3 day-column" style="display: none !important;">
+<input class="agegate-field agegate-day" pattern="\d*" type="text" maxlength="2" name="dob[dd]" placeholder="DD" value="1">
+</div>-->
+<div class="columns small-3 end">
+<input class="agegate-field agegate-year" pattern="\d*" maxlength="4" type="text" name="dob[yy]" placeholder="YYYY" />
+</div>
+</div>
+</div>
+</div>
+<div class="age-gate-msg"></div>
+<button disabled id="age-gate-submit-btn" type="submit" form="" value=""><span>Submit</span></button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="js/agegate.js"></script>
+<script>
+/**
+* AgeGate
+*/
+var isLandingPage = $("body").hasClass("freetoplay-landing-page");
+
+runAgegate(isLandingPage);
+</script>
+
+<!-- Holds navigation bat react component -->
+<!-- <script src="/js/navigation.js"></script> -->
+
+<div id="new-main-nav-app" class="contain-to-grid"></div>
+<div data-reactroot="" id="new-main-nav" onclick="toggleMenu()" style="top: 0px; position: fixed;">
+<div class="menu-btn">
+<div class="menu-icon"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="menu-contain">
+<a class="logo-link" href="#"><img class="logo" src="img/global/nav-bs-logo.png" /></a>
+<ul>
+
+<li class=""><a class="navlink" href="#">Home</a></li>
+<li class="active"><a class="navlink" href="/about.html">About Game</a></li>
+<li class=""><a class="navlink" href="/races.html">Races</a></li>
+<li class=""><a class="navlink" href="/factions.html">Factions</a></li>
+<li class=""><a class="navlink" href="/classes.html">Classes</a></li>
+<li class=""><a class="navlink" href="https://discord.gg/eqUyReD" target="_blank">Community</a></li>
+<li class=""><a class="navlink" href="/downloads.html">Download</a></li>
+
+</ul>
+
+<a class="play-free-btn logged-out" href="/register.html"><div class="play-free-btn-inner">REGISTER FREE NOW</div></a>
+</div>
+</div>
+
+<div class="game-overview">
+<div class="game-sections">
+<div class="section-game-overview section-1">
+<div class="row game-overview-info">
+<div class="xxlarge-6 columns">
+<div class="top-text">
+<h2>Rise. Strike. Avenge.</h2>
+<p>Your tale of revenge unravels across a breathtaking world where martial arts and mythology meet in a furious clash of fists and betrayal.</p>
+</div>
+<div class="bottom-text">
+<h3>Become a Powerful Warrior!</h3>
+<p>The path of vengeance begins with determination. Choose one of four unique races, and use detailed character customization tools to shape your persona with near-infinite possibilities.</p>
+</div>
+</div>
+</div>
+<!-- .row -->
+<div class="character section-1-character"></div>
+</div>
+<!--  .section-1 -->
+<div class="section-game-overview section-2">
+<div class="row game-overview-info">
+<div class="xlarge-6 xlarge-offset-6 columns">
+<div class="bottom-text">
+<h3>Glide, sprint and jump across a visually stunning &amp; unique world!</h3>
+<p>
+Like the crane that soars on the wind, explore a beautiful, cinematic world like never before as you use the power of windwalk to glide across forests, dash across rivers, and jump over mountains. See the
+world inspired by the distinct visual style of acclaimed artist Hyung Tae Kim as you travel the land.
+</p>
+</div>
+</div>
+</div>
+<!-- .row -->
+<div class="character section-2-character"></div>
+</div>
+<!--  .section-2 -->
+<div class="section-game-overview section-3">
+<div class="row game-overview-info">
+<div class="xlarge-6 columns">
+<div class="bottom-text">
+<h3>Avenge the Fallen.</h3>
+<p>
+As a promising student of the Hongmoon School, you train your skills in peace. However, when the wicked Jinsoyun arrives to slaughter your fellow students and beloved Master in search for the Twilight’s
+Edge, your story truly begins. Rise in power, seek vengeance, and stop Jinsoyun’s plan to unleash the forces of the Dark Realm upon the world.
+</p>
+</div>
+</div>
+</div>
+<!-- .row -->
+<div class="character section-3-character"></div>
+</div>
+<!--  .section-3 -->
+<div class="section-game-overview section-4">
+<div class="row game-overview-info">
+<div class="xlarge-6 xlarge-offset-6 columns">
+<div class="bottom-text">
+<h3>Master the Art of War!</h3>
+<p>
+Pick from 12 classes and battle foes with a fast-paced action-combat system where timing, counters, and combos are the focus. Listen well, although the way of battle is easy to learn, becoming a true
+master takes practice. Challenge foes in PvP duels, or explore with friends in a variety of Dungeons and hone your combat skills to match your legacy.
+</p>
+</div>
+</div>
+</div>
+<!-- .row -->
+</div>
+<!--  .section-4 -->
+</div>
+</div>
+<!-- .game-overview -->
+
+<div class="races-slider hide-for-xlarge-up">
+<h2>Which race are you?</h2>
+<div class="races-slides">
+<div class="copy gon-copy gon">
+<div class="content">
+<h3>Gon</h3>
+<p>The mighty Gon, infused with the energy of the Dragon, make stalwart and generous allies but fearsome combatants.</p>
+<h4>Available Classes:</h4>
+<p class="available-classes-links">
+<a href="/destroyer.html">Destroyer</a>, <a href="/kung-fu-master.html">Kung Fu Master</a>,
+<a href="/force-master.html">Force Master</a>, <a href="/soul-fighter.html">Soul Fighter</a>,
+</p>
+<a class="nobrush" href="/races.html">Learn More</a>
+<ul class="male-female-selection inline-list">
+<li class="male">Male</li>
+<li class="female">Female</li>
+</ul>
+</div>
+<div class="large-6 columns race-preview gon-male">
+<img src="img/home/races/mobile/race_01_gon_m.png" alt="Gon" />
+</div>
+<div class="large-6 columns race-preview gon-female">
+<img src="img/home/races/mobile/race_01_gon_f.png" alt="Gon" />
+</div>
+</div>
+<!--  .copy.gon-copy -->
+<div class="copy jin-copy jin">
+<div class="content">
+<h3>Jin</h3>
+<p>Versatile, tenacious, friendly, and wise – the Jin channel all the legendary features of the Black Tortoise plus their own strong sense of justice.</p>
+<h4>Available Classes:</h4>
+<p class="available-classes-links">
+<a href="/assassin.html">Assassin</a>, <a href="/blade-master.html">Blade Master</a>,
+<a href="/kung-fu-master.html">Kung Fu Master</a>, <a href="/warlock.html">Warlock</a>,
+</p>
+<a class="nobrush" href="/races.html">Learn More</a>
+<ul class="male-female-selection inline-list">
+<li class="male">Male</li>
+<li class="female">Female</li>
+</ul>
+</div>
+<div class="large-6 columns race-preview jin-male">
+<img src="img/home/races/mobile/race_02_jin_m.png" alt="Jin" />
+</div>
+<div class="large-6 columns race-preview jin-female">
+<img src="img/home/races/mobile/race_02_jin_f.png" alt="Jin" />
+</div>
+</div>
+<!--  .copy.jin-copy -->
+<div class="copy yun-copy yun">
+<div class="content">
+<h3>Yun</h3>
+<p>Bequeathed with the beauty of the Phoenix, the all-female Yun prefer the divine order of the natural world over the politics of civilized life.</p>
+<h4>Available Classes:</h4>
+<p class="available-classes-links">
+<a href="/force-master.html">Force Master</a>, <a href="/blade-master.html">Blade Master</a>,
+<a href="/kung-fu-master.html">Kung Fu Master</a>, <a href="/soul-fighter.html">Soul Fighter</a>,
+</p>
+<a class="nobrush" href="/races.html">Learn More</a>
+<ul class="male-female-selection inline-list">
+<li class="female">Female</li>
+</ul>
+</div>
+<div class="large-6 columns race-preview yun-male">
+<img src="img/home/races/mobile/race_03_yun.png" alt="Yun" />
+</div>
+<div class="large-6 columns race-preview yun-female">
+<img src="img/home/races/mobile/race_03_yun.png" alt="Yun" />
+</div>
+</div>
+<!--  .copy.yun-copy -->
+<div class="copy lyn-copy lyn">
+<div class="content">
+<h3>Lyn</h3>
+<p>Descendants of the Kirin, the Lyn are known as much for their unpredictable nature as they are for their otherworldly mysticism.</p>
+<h4>Available Classes:</h4>
+<p class="available-classes-links">
+<a href="/summoner.html">Summoner</a>, <a href="/force-master.html">Force Master</a>,
+<a href="/blade-dancer.html">Blade Dancer</a>, <a href="/warlock.html">Warlock</a>,
+</p>
+<a class="nobrush" href="/races.html">Learn More</a>
+<ul class="male-female-selection inline-list">
+<li class="male">Male</li>
+<li class="female">Female</li>
+</ul>
+</div>
+<div class="large-6 columns race-preview lyn-male">
+<img src="img/home/races/mobile/race_04_lyn_m.png" alt="Lyn" />
+</div>
+<div class="large-6 columns race-preview lyn-female">
+<img src="img/home/races/mobile/race_04_lyn_f.png" alt="Lyn" />
+</div>
+</div>
+<!--  .copy.lyn-copy -->
+</div>
+</div>
+<!-- .races-slider -->
+
+<div class="races show-for-xlarge-up">
+<div class="row">
+<div class="medium-6 columns race-info">
+<ul class="race-selection no-select">
+<li id="selectGon" class="home-what-race-link gon active">Gon</li>
+<li id="selectJin" class="home-what-race-link jin">Jin</li>
+<li id="selectYun" class="home-what-race-link yun">Yun</li>
+<li id="selectLyn" class="home-what-race-link lyn">Lyn</li>
+</ul>
+
+<div class="copy gon-copy">
+<h2>Which race are you?</h2>
+<h3>Gon</h3>
+<p>The mighty Gon, infused with the energy of the Dragon, make stalwart and generous allies but fearsome combatants.</p>
+<h4>Available Classes:</h4>
+<p class="available-classes-links">
+<a href="/destroyer.html">Destroyer</a>, <a href="/kung-fu-master.html">Kung Fu Master</a>,
+<a href="/force-master.html">Force Master</a>, <a href="/soul-fighter.html">Soul Fighter</a>,
+</p>
+<ul class="male-female-selection inline-list no-select">
+<li class="male">Male</li>
+<li class="female">Female</li>
+</ul>
+<a class="nobrush" href="/races.html">Learn More</a>
+</div>
+<!--  .copy.gon-copy -->
+<div class="copy jin-copy">
+<h2>Which race are you?</h2>
+<h3>Jin</h3>
+<p>Versatile, tenacious, friendly, and wise – the Jin channel all the legendary features of the Black Tortoise plus their own strong sense of justice.</p>
+<h4>Available Classes:</h4>
+<p class="available-classes-links">
+<a href="/assassin.html">Assassin</a>, <a href="/blade-master.html">Blade Master</a>,
+<a href="/kung-fu-master.html">Kung Fu Master</a>, <a href="/warlock.html">Warlock</a>,
+<a href="/soul-fighter.html">Soul Fighter</a>
+</p>
+<ul class="male-female-selection inline-list no-select">
+<li class="male">Male</li>
+<li class="female">Female</li>
+</ul>
+<a class="nobrush" href="/races.html">Learn More</a>
+</div>
+<!--  .copy.jin-copy -->
+<div class="copy yun-copy">
+<h2>Which race are you?</h2>
+<h3>Yun</h3>
+<p>Bequeathed with the beauty of the Phoenix, the all-female Yun prefer the divine order of the natural world over the politics of civilized life.</p>
+<h4>Available Classes:</h4>
+<p class="available-classes-links">
+<a href="/force-master.html">Force Master</a>, <a href="/blade-master.html">Blade Master</a>,
+<a href="/kung-fu-master.html">Kung Fu Master</a>, <a href="/soul-fighter.html">Soul Fighter</a>,
+</p>
+<ul class="male-female-selection inline-list no-select">
+<li class="female">Female</li>
+</ul>
+<a class="nobrush" href="/races.html">Learn More</a>
+</div>
+<!--  .copy.yun-copy -->
+<div class="copy lyn-copy">
+<h2>Which race are you?</h2>
+<h3>Lyn</h3>
+<p>Descendants of the Kirin, the Lyn are known as much for their unpredictable nature as they are for their otherworldly mysticism.</p>
+<h4>Available Classes:</h4>
+<p class="available-classes-links">
+<a href="/summoner.html">Summoner</a>, <a href="/force-master.html">Force Master</a>,
+<a href="/blade-dancer.html">Blade Dancer</a>, <a href="/warlock.html">Warlock</a>,
+</p>
+<ul class="male-female-selection inline-list no-select">
+<li class="male">Male</li>
+<li class="female">Female</li>
+</ul>
+<a class="nobrush" href="/races.html">Learn More</a>
+</div>
+<!--  .copy.lyn-copy -->
+</div>
+<div class="medium-6 columns race-preview gon-male">
+<img src="img/home/races/desktop/race_01_gon_m.png" alt="Gon" />
+</div>
+<div class="medium-6 columns race-preview jin-male">
+<img src="img/home/races/desktop/race_02_jin_m.png" alt="Jin" />
+</div>
+<div class="medium-6 columns race-preview yun-male">
+<img src="img/home/races/desktop/race_03_yun.png" alt="Yun" />
+</div>
+<div class="medium-6 columns race-preview lyn-male">
+<img src="img/home/races/desktop/race_04_lyn_m.png" alt="Lyn" />
+</div>
+<div class="medium-6 columns race-preview gon-female">
+<img src="img/home/races/desktop/race_01_gon_f.png" alt="Gon" />
+</div>
+<div class="medium-6 columns race-preview jin-female">
+<img src="img/home/races/desktop/race_02_jin_f.png" alt="Jin" />
+</div>
+<div class="medium-6 columns race-preview yun-female">
+<img src="img/home/races/desktop/race_03_yun.png" alt="Yun" />
+</div>
+<div class="medium-6 columns race-preview lyn-female">
+<img src="img/home/races/desktop/race_04_lyn_f.png" alt="Lyn" />
+</div>
+</div>
+<!-- .row -->
+</div>
+<!-- .races -->
+
+<div class="classes-slider hide-for-xlarge-up">
+<h2>Choose Your Class</h2>
+<div class="classes-slides">
+<div class="medium-5 columns copy blademaster-copy">
+<div class="content">
+<h3>Blade Master</h3>
+<p>Front-line warriors that balance offensive and defensive attacks.</p>
+<a class="nobrush" href="/blade-master.html">Learn More</a>
+</div>
+<div class="medium-12 columns preview class-blademaster">
+<img src="img/home/classes/desktop/class_01_blademaster.png" alt="Blade Master" class="show-for-large-up" />
+<img src="img/home/classes/mobile/class_01_blademaster.png" alt="Blade Master" class="hide-for-large-up" />
+</div>
+</div>
+<div class="medium-5 columns copy destroyer-copy">
+<div class="content">
+<h3>Destroyer</h3>
+<p>Battle-hardened melee fighters who dominate the field.</p>
+<a class="nobrush" href="/destroyer.html">Learn More</a>
+</div>
+<div class="medium-12 columns preview class-destroyer">
+<img src="img/home/classes/desktop/class_02_destroyer.png" alt="Destroyer" class="show-for-large-up" />
+<img src="img/home/classes/mobile/class_02_destroyer.png" alt="Destroyer" class="hide-for-large-up" />
+</div>
+</div>
+<div class="medium-5 columns copy summoner-copy">
+<div class="content">
+<h3>Summoner</h3>
+<p>Controllors of foes for the Cat Familiar to shred.</p>
+<a class="nobrush" href="/summoner.html">Learn More</a>
+</div>
+<div class="medium-12 columns preview class-summoner">
+<img src="img/home/classes/desktop/class_03_summoner.png" alt="Summoner" class="show-for-large-up" />
+<img src="img/home/classes/mobile/class_03_summoner.png" alt="Summoner" class="hide-for-large-up" />
+</div>
+</div>
+<div class="medium-5 columns copy forcemaster-copy">
+<div class="content">
+<h3>Force Master</h3>
+<p>Ranged caster who calls upon the elements of fire and ice.</p>
+<a class="nobrush" href="/force-master.html">Learn More</a>
+</div>
+<div class="medium-12 columns preview class-forcemaster">
+<img src="img/home/classes/desktop/class_04_forcemaster.png" alt="Force Master" class="show-for-large-up" />
+<img src="img/home/classes/mobile/class_04_forcemaster.png" alt="Force Master" class="hide-for-large-up" />
+</div>
+</div>
+<div class="medium-5 columns copy kungfumaster-copy">
+<div class="content">
+<h3>Kung Fu Master</h3>
+<p>Experts in hand-to-hand fighting, with fast-paced, extravagant attacks.</p>
+<a class="nobrush" href="/kung-fu-master.html">Learn More</a>
+</div>
+<div class="medium-12 columns preview class-kungfumaster">
+<img src="img/home/classes/desktop/class_05_kungfumaster.png" alt="Kung Fu Master" class="show-for-large-up" />
+<img src="img/home/classes/mobile/class_05_kungfumaster.png" alt="Kung Fu Master" class="hide-for-large-up" />
+</div>
+</div>
+<div class="medium-5 columns copy assassin-copy">
+<div class="content">
+<h3>Assassin</h3>
+<p>Calculating and precise masters of stealth and disorientation.</p>
+<a class="nobrush" href="/assassin.html">Learn More</a>
+</div>
+<div class="medium-12 columns preview class-assassin">
+<img src="img/home/classes/desktop/class_06_assassin.png" alt="Assassin" class="show-for-large-up" />
+<img src="img/home/classes/mobile/class_06_assassin.png" alt="Assassin" class="hide-for-large-up" />
+</div>
+</div>
+<div class="medium-5 columns copy bladedancer-copy">
+<div class="content">
+<h3>Blade Dancer</h3>
+<p>Nimble combatants who infuse the elements to their blade.</p>
+<a class="nobrush" href="/blade-dancer.html">Learn More</a>
+</div>
+<div class="medium-12 columns preview class-bladedancer">
+<img src="img/home/classes/desktop/class_07_bladedancer.png" alt="Blade Dancer" class="show-for-large-up" />
+<img src="img/home/classes/mobile/class_07_bladedancer.png" alt="Blade Dancer" class="hide-for-large-up" />
+</div>
+</div>
+<div class="medium-5 columns copy warlock-copy">
+<div class="content">
+<h3>Warlock</h3>
+<p>Fast and flashy conjurers infused with spirit energy.</p>
+<a class="nobrush" href="/warlock.html">Learn More</a>
+</div>
+<div class="medium-12 columns preview class-warlock">
+<img src="img/home/classes/desktop/class_08_warlock.png" alt="Warlock" class="show-for-large-up" />
+<img src="img/home/classes/mobile/class_08_warlock.png" alt="Warlock" class="hide-for-large-up" />
+</div>
+</div>
+<div class="medium-5 columns copy soulfighter-copy">
+<div class="content">
+<h3>Soul Fighter</h3>
+<p>Charged duelists commanding both melee and ranged skills.</p>
+<a class="nobrush" href="/soul-fighter.html">Learn More</a>
+</div>
+<div class="medium-12 columns preview class-soulfighter">
+<img src="img/home/classes/desktop/class_09_soulfighter.png" alt="Soul Fighter" class="show-for-large-up" />
+<img src="img/home/classes/mobile/class_09_soulfighter.png" alt="Soul Fighter" class="hide-for-large-up" />
+</div>
+</div>
+
+</div>
+</div>
+<!-- .races-slider -->
+
+<div class="classes show-for-xlarge-up">
+<div class="row collapse">
+<div class="columns preview class-blademaster">
+<img src="img/home/classes/desktop/class_01_blademaster.png" alt="Blade Master" />
+</div>
+<!-- .preview.class-assassin -->
+<div class="columns preview class-destroyer">
+<img src="img/home/classes/desktop/class_02_destroyer.png" alt="Destroyer" />
+</div>
+<!-- .preview.class-assassin -->
+<div class="columns preview class-summoner">
+<img src="img/home/classes/desktop/class_03_summoner.png" alt="Summoner" />
+</div>
+<!-- .preview.class-assassin -->
+<div class="columns preview class-forcemaster">
+<img src="img/home/classes/desktop/class_04_forcemaster.png" alt="Force Master" />
+</div>
+<!-- .preview.class-assassin -->
+<div class="columns preview class-kungfumaster">
+<img src="img/home/classes/desktop/class_05_kungfumaster.png" alt="Kung Fu Master" />
+</div>
+<!-- .preview.class-assassin -->
+<div class="columns preview class-assassin">
+<img src="img/home/classes/desktop/class_06_assassin.png" alt="Assassin" />
+</div>
+<!-- .preview.class-assassin -->
+<div class="columns preview class-bladedancer">
+<img src="img/home/classes/desktop/class_07_bladedancer.png" alt="Bladedancer" />
+</div>
+<!-- .preview.class-bladedancer -->
+<div class="columns preview class-warlock">
+<img src="img/home/classes/desktop/class_08_warlock.png" alt="Warlock" />
+</div>
+<!-- .preview.class-warlock -->
+<div class="columns preview class-soulfighter">
+<img src="img/home/classes/desktop/class_09_soulfighter.png" alt="Soul Fighter" />
+</div>
+<!-- .preview.class-soulfighter -->
+<div class="columns preview class-gunslinger">
+<img src="img/home/classes/desktop/class_10_gunslinger.png" alt="Gunslinger" />
+</div>
+<div class="large-6 columns copy blademaster-copy">
+<h2>Choose Your Class</h2>
+<h3>Blade Master</h3>
+<p>Front-line warriors that balance offensive and defensive attacks.</p>
+<a class="nobrush" href="/blade-master.html">Learn More</a>
+</div>
+<div class="large-6 columns copy destroyer-copy">
+<h2>Choose Your Class</h2>
+<h3>Destroyer</h3>
+<p>Battle-hardened melee fighters who dominate the field.</p>
+<a class="nobrush" href="/destroyer.html">Learn More</a>
+</div>
+<div class="large-6 columns copy summoner-copy">
+<h2>Choose Your Class</h2>
+<h3>Summoner</h3>
+<p>Controllors of foes for the Cat Familiar to shred.</p>
+<a class="nobrush" href="/summoner.html">Learn More</a>
+</div>
+<div class="large-6 columns copy forcemaster-copy">
+<h2>Choose Your Class</h2>
+<h3>Force Master</h3>
+<p>Ranged caster who calls upon the elements of fire and ice.</p>
+<a class="nobrush" href="/force-master.html">Learn More</a>
+</div>
+<div class="large-6 columns copy kungfumaster-copy">
+<h2>Choose Your Class</h2>
+<h3>Kung Fu Master</h3>
+<p>Experts in hand-to-hand fighting, with fast-paced, extravagant attacks.</p>
+<a class="nobrush" href="/kung-fu-master.html">Learn More</a>
+</div>
+<div class="large-6 columns copy assassin-copy">
+<h2>Choose Your Class</h2>
+<h3>Assassin</h3>
+<p>Calculating and precise masters of stealth and disorientation.</p>
+<a class="nobrush" href="/assassin.html">Learn More</a>
+</div>
+<div class="large-6 columns copy bladedancer-copy">
+<h2>Choose Your Class</h2>
+<h3>Blade Dancer</h3>
+<p>Nimble combatants who infuse the elements to their blade.</p>
+<a class="nobrush" href="/blade-dancer.html">Learn More</a>
+</div>
+<div class="large-6 columns copy warlock-copy">
+<h2>Choose Your Class</h2>
+<h3>Warlock</h3>
+<p>Fast and flashy conjurers infused with spirit energy.</p>
+<a class="nobrush" href="/warlock.html">Learn More</a>
+</div>
+<div class="large-6 columns copy soulfighter-copy">
+<h2>Choose Your Class</h2>
+<h3>Soul Fighter</h3>
+<p>Charged duelists commanding both melee and ranged skills.</p>
+<a class="nobrush" href="/soul-fighter.html">Learn More</a>
+</div>
+</div>
+<!-- .row -->
+<div class="row collapse about-classes-nav no-select">
+<div class="small-1 columns class-nav">
+<div id="selectBlademaster" class="class-icon blademaster active">Blade Master</div>
+</div>
+<div class="small-1 columns class-nav">
+<div id="selectDestroyer" class="class-icon destroyer">Destroyer</div>
+</div>
+<div class="small-1 columns class-nav">
+<div id="selectSummoner" class="class-icon summoner">Summoner</div>
+</div>
+<div class="small-1 columns class-nav">
+<div id="selectForcemaster" class="class-icon forcemaster">Force Master</div>
+</div>
+<div class="small-1 columns class-nav">
+<div id="selectKungfumaster" class="class-icon kungfumaster">Kung Fu Master</div>
+</div>
+<div class="small-1 columns class-nav">
+<div id="selectAssassin" class="class-icon assassin">Assassin</div>
+</div>
+<div class="small-1 columns class-nav">
+<div id="selectBladedancer" class="class-icon bladedancer">Blade Dancer</div>
+</div>
+<div class="small-1 columns class-nav">
+<div id="selectWarlock" class="class-icon warlock">Warlock</div>
+</div>
+<div class="small-1 columns class-nav">
+<div id="selectSoulfighter" class="class-icon soulfighter">Soul Fighter</div>
+</div>
+</div>
+<!-- .row -->
+</div>
+<!-- .classes -->
+
+<div class="media">
+<div class="row show-for-xlarge-up">
+<div class="columns">
+<h2>Media</h2>
+</div>
+</div>
+<div class="media-items medium-collapse media-section" style="position: relative; height: 750px;">
+<div class="media-item video" data-video-id="id-e18afb5f-4826-4a0c-ab39-2bb1d5902cf1" style="position: absolute; left: 50%; top: 0px;">
+<div class="wrap">
+<a href="javascript:void(0);" data-reveal-id="id-e18afb5f-4826-4a0c-ab39-2bb1d5902cf1"><img src="/video/blademaster.webp" alt="Blade &amp; Soul: The Destroyer Overview" /></a>
+<div id="id-e18afb5f-4826-4a0c-ab39-2bb1d5902cf1" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+<div class="responsive-video-container">
+
+<video width="100%" height="100%" controls>
+  <source src="/video/blademaster.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+<a class="close-reveal-modal" aria-label="Close">×</a>
+</div>
+</div>
+</div>
+<div class="media-item video" data-video-id="id-b2645b57-70e6-4585-9760-e6162c2aa80d" style="position: absolute; left: 25%; top: 0px;">
+<div class="wrap">
+<a href="javascript:void(0);" data-reveal-id="id-b2645b57-70e6-4585-9760-e6162c2aa80d"><img src="/video/destroyer.webp" alt="Blade &amp; Soul: The Kung Fu Master Overview" /></a>
+<div id="id-b2645b57-70e6-4585-9760-e6162c2aa80d" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+<div class="responsive-video-container">
+
+<video width="100%" height="100%" controls>
+  <source src="/video/destroyer.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+<a class="close-reveal-modal" aria-label="Close">×</a>
+</div>
+</div>
+</div>
+<div class="media-item video" data-video-id="id-c7b8481d-a4e0-47d3-bf8b-8ecdcfe58478" style="position: absolute; left: 0%; top: 0px;">
+<div class="wrap">
+<a href="javascript:void(0);" data-reveal-id="id-c7b8481d-a4e0-47d3-bf8b-8ecdcfe58478"><img src="/video/forcemaster.webp" alt="Blade &amp; Soul: When Heroes Rise" /></a>
+<div id="id-c7b8481d-a4e0-47d3-bf8b-8ecdcfe58478" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+<div class="responsive-video-container">
+
+<video width="100%" height="100%" controls>
+  <source src="/video/forcemaster.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+<a class="close-reveal-modal" aria-label="Close">×</a>
+</div>
+</div>
+</div>
+<div class="media-item video" data-video-id="id-9a89db35-ad62-415c-9456-53925e7a5c81" style="position: absolute; left: 75%; top: 0px;">
+<div class="wrap">
+<a href="javascript:void(0);" data-reveal-id="id-9a89db35-ad62-415c-9456-53925e7a5c81"><img src="/video/warlock.webp" alt="Blade &amp; Soul: The Force Master Overview" /></a>
+<div id="id-9a89db35-ad62-415c-9456-53925e7a5c81" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+<div class="responsive-video-container">
+
+<video width="100%" height="100%" controls>
+  <source src="/video/warlock.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+<a class="close-reveal-modal" aria-label="Close">×</a>
+</div>
+</div>
+</div>
+
+<div class="media-item video" data-video-id="id-a187e6fe-6512-499c-894c-b34646d262ef" style="position: absolute; left: 25%; top: 250px;">
+<div class="wrap">
+<a href="javascript:void(0);" data-reveal-id="id-a187e6fe-6512-499c-894c-b34646d262ef"><img src="/video/summoner.webp" alt="Blade &amp; Soul: The Assassin Overview" /></a>
+<div id="id-a187e6fe-6512-499c-894c-b34646d262ef" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+<div class="responsive-video-container">
+
+<video width="100%" height="100%" controls>
+  <source src="/video/summoner.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+<a class="close-reveal-modal" aria-label="Close">×</a>
+</div>
+</div>
+</div>
+
+
+<div class="media-item video" data-video-id="id-efb26e3f-ef41-42a1-9d3b-fbdebc9e757b" style="position: absolute; left: 0%; top: 250px;">
+<div class="wrap">
+<a href="javascript:void(0);" data-reveal-id="id-efb26e3f-ef41-42a1-9d3b-fbdebc9e757b"><img src="/video/assassin.webp" alt="Blade &amp; Soul: The Blade Dancer Overview" /></a>
+<div id="id-efb26e3f-ef41-42a1-9d3b-fbdebc9e757b" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+<div class="responsive-video-container">
+
+<video width="100%" height="100%" controls>
+  <source src="/video/assassin.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+<a class="close-reveal-modal" aria-label="Close">×</a>
+</div>
+</div>
+</div>
+
+<div class="media-item video" data-video-id="id-8aaa2fd2-c49d-4892-a38d-3f887f622c8c" style="position: absolute; left: 0%; top: 500px;">
+<div class="wrap">
+<a href="javascript:void(0);" data-reveal-id="id-8aaa2fd2-c49d-4892-a38d-3f887f622c8c"><img src="/video/kungfumaster.webp" alt="Blade &amp; Soul: Teaser Trailer" /></a>
+<div id="id-8aaa2fd2-c49d-4892-a38d-3f887f622c8c" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+<div class="responsive-video-container">
+
+<video width="100%" height="100%" controls>
+  <source src="/video/kungfumaster.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+<a class="close-reveal-modal" aria-label="Close">×</a>
+</div>
+</div>
+</div>
+
+<div class="media-item video" data-video-id="id-142fe119-a4a2-4a2f-ac33-fa8ca50bd9f4" style="position: absolute; left: 75%; top: 250px;">
+<div class="wrap">
+<a href="javascript:void(0);" data-reveal-id="id-142fe119-a4a2-4a2f-ac33-fa8ca50bd9f4"><img src="/video/soulfighter.webp" alt="Blade &amp; Soul: Launch Trailer" /></a>
+<div id="id-142fe119-a4a2-4a2f-ac33-fa8ca50bd9f4" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+<div class="responsive-video-container">
+
+<video width="100%" height="100%" controls>
+  <source src="/video/soulfighter.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+<a class="close-reveal-modal" aria-label="Close">×</a>
+</div>
+</div>
+</div>
+
+<div class="media-item video" data-video-id="id-11984e03-d961-4af1-8947-f833a3b81ce6" style="position: absolute; left: 50%; top: 250px;">
+<div class="wrap">
+<a href="javascript:void(0);" data-reveal-id="id-11984e03-d961-4af1-8947-f833a3b81ce6"><img src="/video/bladedancer.webp" alt="Blade &amp; Soul: Upcoming Content Teaser" /></a>
+<div id="id-11984e03-d961-4af1-8947-f833a3b81ce6" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+<div class="responsive-video-container">
+
+<video width="100%" height="100%" controls>
+  <source src="/video/bladedancer.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+<a class="close-reveal-modal" aria-label="Close">×</a>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!--id="media-section"-->
+<div class="grid-sizer"></div>
+</div>
+
+<ul class="clearingWrap clearing-thumbs media-clearing" data-clearing></ul>
+<!--id="media-clearing"-->
+</div>
+<!--  .media -->
+<script>
+var _clearingLabels = {
+viewMore: "View More",
+close: "Close",
+};
+</script>
+
+<!-- added footer-freetoplay.html for freetoplay page ONLY -->
+<div id="footer-playfreenow">
+<div class="row">
+<div class="columns">
+<div class="copy">
+<a href="/downloads.html" class="playfreenow icon">
+<span class="large">Play Free Now</span>
+</a>
+<a href="/downloads.html" class="downloadnow icon">
+<span class="large">Download Now</span>
+</a>
+</div>
+<!--  .copy -->
+</div>
+</div>
+<!--  .row -->
+</div>
+
+<div id="footer">
+<div class="top">
+<div class="row footer-links">
+<div class="small-12 columns footer-link-column-left sns-only-footer-links">
+<div class="small-12 small-centered columns column-sns">
+<h4>Follow Us</h4>
+<ul class="footer-list">
+<li>
+<a href="#" target="_blank"><i class="fa fa-facebook sns-footer"></i> Facebook</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitter sns-footer"></i> Twitter</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-twitch sns-footer"></i> Twitch</a>
+</li>
+<li>
+<a href="#" target="_blank"><i class="fa fa-instagram sns-footer"></i> Instagram</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- .row -->
+<div class="row logo">
+<div class="columns bns-logo">
+<a href="#"><img src="img/global/footer-bns-logo.png" alt="Blade &amp; Soul" /></a>
+</div>
+</div>
+<div class="row legal">
+<div class="columns desktop copyright">
+<div class="copy">
+<p>©2019 NCSOFT Corporation. All rights reserved. All trademarks are the property of their respective owners.</p>
+</div>
+<!--  .copy -->
+<a href="#" target="_blank" class="gamerating-logo gamerating-en gamerating-ESRB">
+<img src="img/global/BnS_ESRB_RatedM.png" alt="ESRB" class="rating" />
+</a>
+</div>
+</div>
+<!-- .row -->
+</div>
+<!--  .top -->
+</div>
+<!-- #footer  -->
+
+
+<script src="js/main.js"></script>
+<script src="js/components-20210127.js"></script>
+<script src="/js/menu.js"></script>
+</body>
+</html>
